@@ -1,9 +1,11 @@
----
 title: Crontab定时任务设置
-date: 2017-12-27 16:49:49
-categories: "Linux"
+categories:
+  - 运维
+  - ''
 tags:
-    - Linux
+  - Linux
+author: DuanEnJian
+date: 2017-12-27 16:49:00
 ---
 ```
 [root@localhost ~]# /sbin/service crond start

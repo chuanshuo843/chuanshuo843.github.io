@@ -1,19 +1,20 @@
----
 title: PHP的RSA加密解密
-date: 2017-12-27 17:45:15
 tags:
- - PHP
-categories: "开发"
+  - PHP
+categories:
+  - 开发
+author: DuanEnJian
+date: 2017-12-27 17:45:00
 ---
->php服务端与客户端交互、提供开放api时，通常需要对敏感的部分api数据传输进行数据加密，这时候rsa非对称加密就能派上用处了，下面通过一个例子来说明如何用php来实现数据的加密解密
+php服务端与客户端交互、提供开放api时，通常需要对敏感的部分api数据传输进行数据加密，这时候rsa非对称加密就能派上用处了，下面通过一个例子来说明如何用php来实现数据的加密解密
 
-# 1.生成公钥、私钥
+# 生成公钥、私钥
 ```bash
 openssl genrsa -out rsa_private_key.pem 1024
 openssl pkcs8 -topk8 -inform PEM -in rsa_private_key.pem -outform PEM -nocrypt -out private_key.pem
 openssl rsa -in rsa_private_key.pem -pubout -out rsa_public_key.pem
 ```
-# 2.PHP进行加密解密
+# PHP进行加密解密
 ```php
 <?php  
 

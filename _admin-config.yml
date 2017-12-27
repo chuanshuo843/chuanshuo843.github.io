@@ -1,0 +1,10 @@
+options:
+  lineNumbers: true
+  spellcheck: true
+  overwriteImages: true
+  askImageFilename: true
+  imagePrefix: gank_
+editor:
+  lineNumbers: true
+  inputStyle: contenteditable
+  spellcheck: true
