@@ -83,10 +83,10 @@ deploy:
 
 # 配置RSS
 # npm install hexo-generator-feed
-#feed:
-#  type: rss2
-#  path: rss2.xml
-#  limit: 20
+feed:
+  type: atom
+  path: atom.xml
+  limit: 0
 #  hub:
 #  content:
 #  content_limit: 140
