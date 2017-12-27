@@ -4,10 +4,10 @@
 
 # Site
 title: o时过境迁心难沉
-subtitle: 苏老堤边玉一林，六桥风月是知音。任他桃李争欢赏，不为繁华易素心。
+subtitle: 记录看到和遇到的问题和解决方式
 description: 苏老堤边玉一林，六桥风月是知音。任他桃李争欢赏，不为繁华易素心。
 author: DuanEnJian
-language: zh-cn
+language: zh-Hans
 timezone: Asia/Shanghai
 
 # URL
@@ -80,3 +80,29 @@ deploy:
     type: git 
     repository: git@github.com:chuanshuo843/chuanshuo843.github.io.git
     branch: master
+
+# 配置RSS
+# npm install hexo-generator-feed
+#feed:
+#  type: rss2
+#  path: rss2.xml
+#  limit: 20
+#  hub:
+#  content:
+#  content_limit: 140
+#  content_limit_delim: ' '
+
+# 自定义站点内容搜索
+# npm install hexo-generator-search --save
+search:
+  path: search.xml
+  # 如只想索引文章，可设置为post
+  field: all
+
+# Extensions 拓展插件配置
+## Plugins: https://hexo.io/plugins/
+plugins: 
+baidusitemap:
+    path: baidusitemap.xml
+sitemap:
+    path: sitemap.xml
