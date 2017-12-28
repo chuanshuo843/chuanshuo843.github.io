@@ -97,7 +97,7 @@ feed:
 search:
   path: search.xml
   # 如只想索引文章，可设置为post
-  field: all
+  field: post
 
 # Extensions 拓展插件配置
 ## Plugins: https://hexo.io/plugins/

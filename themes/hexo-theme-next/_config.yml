@@ -353,7 +353,7 @@ han: false
 # Disqus
 disqus:
   enable: true
-  shortname:
+  shortname: ganktools
   count: true
 
 # Hypercomments
