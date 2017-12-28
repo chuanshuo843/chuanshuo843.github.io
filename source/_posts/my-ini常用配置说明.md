@@ -7,6 +7,8 @@ categories:
 date: 2017-12-27 21:03:00
 ---
 MySQL配置文件在Windows下叫my.ini，在MySQL的安装根目录下；在Linux下叫my.cnf，该文件位于/etc/my.cnf
+
+<!-- more -->
 # 缓存优化
 在my.cnf 中添加/修改以下选项:
 ```

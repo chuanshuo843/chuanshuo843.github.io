@@ -11,6 +11,7 @@ date: 2017-12-27 21:48:00
 #cat /proc/cpuinfo |grep "processor"|sort -u|wc -l
 24
 ```
+<!-- more -->
 # 查看物理CPU个数：
 ```bash
 #grep "physical id" /proc/cpuinfo|sort -u|wc -l     
@@ -68,4 +69,3 @@ CPU Core Number     : 6
 HT Number           : 2
 ***************************** 
 ```
-

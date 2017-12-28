@@ -14,6 +14,8 @@ spl_autoload_register — 注册给定的函数作为 __autoload 的实现
 如果需要多条 autoload 函数，spl_autoload_register() 满足了此类需求。 它实际上创建了 autoload 函数的队列，按定义时的顺序逐个执行。相比之下， __autoload() 只可以定义一次。
 **(PHP 5 >= 5.1.2, PHP 7)**
 
+<!-- more -->
+
 # 核心实代码
 ```php
 <?php

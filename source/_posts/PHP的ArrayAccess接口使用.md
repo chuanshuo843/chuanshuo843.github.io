@@ -11,6 +11,8 @@ PHP5 中多了一系列新接口。同时这些接口和一些实现的 Class �
 如果想让对象使用起来像一个PHP数组，那么我们需要实现ArrayAccess接口
 
 ArrayAccess是一个interface，实现这个interface，必须要实现几个方法
+
+<!-- more -->
 # 示例代码
 ```php
 class Test implements ArrayAccess {

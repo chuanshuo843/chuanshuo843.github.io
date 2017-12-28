@@ -8,6 +8,7 @@ date: 2017-12-27 21:56:00
 ---
 Supervisor是一个进程监控程序。
 满足的需求是：我现在有一个进程需要每时每刻不断的跑，但是这个进程又有可能由于各种原因有可能中断。当进程中断的时候我希望能自动重新启动它，此时，我就需要使用到了Supervisor
+<!-- more -->
 # 先弄懂两个命令:
 supervisord : supervisor的服务器端部分，启动supervisor就是运行这个命令
 supervisorctl：启动supervisor的命令行窗口。

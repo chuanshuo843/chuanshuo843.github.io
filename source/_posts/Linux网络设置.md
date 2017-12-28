@@ -14,6 +14,8 @@ date: 2017-12-27 21:29:00
 nameserver 114.114.114.114
 nameserver 8.8.8.8
 ```
+
+<!-- more -->
 # ip设置
 ```
 #修改文件: vi /etc/sysconfig/network-scripts/ifcfg-eth0

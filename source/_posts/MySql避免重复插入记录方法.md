@@ -15,6 +15,7 @@ INSERT IGNORE INTO `table_name` (`email`, `phone`, `user_id`) VALUES ('test9@163
 #还有个应用就是复制表,避免重复记录
 INSERT IGNORE INTO `table_1` (`name`) SELECT `name` FROM `table_2`;
 ```
+<!-- more -->
 # 使用Replace
 replace into 跟 insert 功能类似，不同点在于：replace into 首先尝试插入数据到表中
 - 如果发现表中已经有此行数据（根据主键或者唯一索引判断）则先删除此行数据，然后插入新的数据。 

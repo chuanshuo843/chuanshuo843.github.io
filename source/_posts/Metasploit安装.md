@@ -12,6 +12,8 @@ date: 2017-12-27 21:25:00
 sudo apt-get install ruby
 sudo apt-get install postgresql-9.3 postgresql-client-9.3
 ```
+
+<!-- more -->
 # 修改pgsql用户密码
 ```
 sudo su postgres  

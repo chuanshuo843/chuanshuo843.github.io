@@ -7,6 +7,8 @@ categories:
 date: 2017-12-27 21:44:00
 ---
 指令的一般格式为 INSTRUCTION arguments ，指令包括 FROM 、 MAINTAINER 、 RUN 等。
+
+<!-- more -->
 # FROM
 格式为 FROM image 或 FROM image:tag 。
 第一条指令必须为 FROM    指令。并且，如果在同一个Dockerfile中创建多个镜像时，可以使用多个 FROM 指令（每个镜像一次）。
