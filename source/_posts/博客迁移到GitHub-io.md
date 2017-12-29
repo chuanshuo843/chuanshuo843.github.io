@@ -1,3 +1,203 @@
+title: 博客迁移到GitHub.io
+author: DuanEnJian
+tags:
+  - 其他
+categories:
+  - 运维
+date: 2017-12-29 10:28:00
+---
+github有一个很有爱的项目，叫做github pages，这个项目是给开发者建立一个私人页面，上面用来分享新颖的想法和自己写的代码，而且最主要的是，这个是免费而且没有空间流量限制的。由于对leanote的维护和数据的迁移感到麻烦，所以最近把博客迁移到了GitHub.io上面省去了服务器的成本和维护的便利,下面记录一下迁移过程
+<!-- more -->
+# GitHub配置
+## 创建仓库
+格式: 用户名.github.io 我这里是chuanshuo843.github.io 记得初始化仓库
+## 启用GitHub Pages
+进入仓库chuanshuo843.github.io -> Settings -> GitHub Pages 
+- Source 选择 master 
+- Choose theme 选择主题开启GitHub Pages
+
+# 本地环境配置
+以下操作都在fedora26下面进行
+```
+#安装node
+dnf install node
+#安装git
+dnf install git
+git config --global user.name "xxxx"
+git config --global user.email "xxxxx@163.com"
+#安装hexo
+npm install hexo-cli -g
+npm install hexo --save
+#创建临时hexo文件
+mkdir ~/local_blog
+hexo init ~/local_blog
+#生成GitHub秘钥,使用GitHub的邮箱账号
+#参考:https://jingyan.baidu.com/article/dca1fa6f756777f1a44052e3.html
+ssh-keygen -t rsa -C "chuanshuo843@163.com" 
+cat ~/.ssh/id_rsa.pub
+```
+## 仓库数据构建
+```
+#到根目录
+cd ~
+#克隆项目
+git clone git@github.com:chuanshuo843/chuanshuo843.github.io.git
+#创建hexo分支
+git checkout -b hexo
+#清空文件
+rm -rf ./*
+#拷贝hexo文件
+cp ~/local_blog/_config.yml ~/chuanshuo843.github.io
+cp -rf ~/local_blog/themes ~/chuanshuo843.github.io
+cp -rf ~/local_blog/source ~/chuanshuo843.github.io
+cp -rf ~/local_blog/scaffolds ~/chuanshuo843.github.io
+cp -rf ~/local_blog/package.json ~/chuanshuo843.github.io
+cp -rf ~/local_blog/.gitignore ~/chuanshuo843.github.io
+#提交到远程分支
+git add .
+git commit -m "init hexo"
+git push origin hexo
+```
+## 安装主题
+```
+cd ~/chuanshuo843.github.io/themes
+rm -rf landscape 
+git clone https://github.com/iissnan/hexo-theme-next.git
+rm -rf hexo-theme-next/.git
+```
+## 安装hexo扩展
+[hexo插件列表](https://hexo.io/plugins/)
+```
+cd ~/chuanshuo843.github.io
+npm install
+#安装git扩展
+npm install hexo-deployer-git --save
+#安装sitemap
+npm install hexo-generator-sitemap --save
+#安装百度sitemap
+npm install hexo-generator-baidu-sitemap --save
+#安装Rss
+npm install hexo-generator-feed --save
+#安装本地搜索
+npm install hexo-generator-search --save
+#安装hexo-admin
+npm install hexo-admin --save
+```
+# hexo配置
+```
+vim ~/chuanshuo843.github.io/_config.yml
+
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: o时过境迁心难沉
+subtitle: 记录看到和遇到的问题和解决方式
+description: 苏老堤边玉一林，六桥风月是知音。任他桃李争欢赏，不为繁华易素心。
+author: DuanEnJian
+language: zh-Hans
+timezone: Asia/Shanghai
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://blog.ganktools.com
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: hexo-theme-next
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+    type: git
+    repository: git@github.com:chuanshuo843/chuanshuo843.github.io.git
+    branch: master
+
+# 配置RSS
+# npm install hexo-generator-feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 0
+#  hub:
+#  content:
+#  content_limit: 140
+#  content_limit_delim: ' '
+
+# 自定义站点内容搜索
+search:
+  path: search.xml
+  field: post
+  
+# Extensions 拓展插件配置
+plugins:
+baidusitemap:
+    path: baidusitemap.xml
+sitemap:
+    path: sitemap.xml
+```
+# hexo-next主题配置
+```
+vim ~/chuanshuo843.github.io/themes/hexo-theme-next/_config.yml
+
+
 # ---------------------------------------------------------------
 # Theme Core Configuration Settings
 # ---------------------------------------------------------------
@@ -32,7 +232,7 @@ keywords: "PHP,Swoole,Nginx,Mysql,Redis,Golang"
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss: 
+rss:
 
 footer:
   # Specify the date when the site was setup.
@@ -803,3 +1003,24 @@ images: images
 
 # Theme version
 version: 5.1.3
+
+```
+# 发布
+- hexo分支 为hexo数据备份
+- master分支 为博客展示数据
+```
+cd ~/chuanshuo843.github.io
+hexo g d
+```
+{% asset_img blog.png 博客页面预览 %}
+{% asset_img master.png master分支预览 %}
+{% asset_img hexo.png hexo分支预览 %}
+# 参考资料
+[20分钟教你使用hexo搭建github博客](https://www.jianshu.com/p/e99ed60390a8)
+[GitHub Pages + Hexo搭建博客](http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more)
+[备份 Hexo 源文件至 GitHub](http://www.leyar.me/backup-your-blog-to-github/)
+[有哪些好看的 Hexo 主题？](https://www.zhihu.com/question/24422335)
+[hexo-admin工具](https://jaredforsyth.com/hexo-admin/)
+[hexo如何生成一篇新的post](http://oakland.github.io/2016/05/02/hexo-%E5%A6%82%E4%BD%95%E7%94%9F%E6%88%90%E4%B8%80%E7%AF%87%E6%96%B0%E7%9A%84post/)
+[hexo常用命令](https://segmentfault.com/a/1190000002632530)
+[Hexo发布博客引用自带图片的方法](https://www.jianshu.com/p/cf0628478a4e)
