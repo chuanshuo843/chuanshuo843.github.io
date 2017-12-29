@@ -70,7 +70,7 @@ rm -rf hexo-theme-next/.git
 ```
 cd ~/chuanshuo843.github.io
 npm install
-#安装git扩展
+#安装git扩展,发布失败请检测是否安装了这个插件
 npm install hexo-deployer-git --save
 #安装sitemap
 npm install hexo-generator-sitemap --save
@@ -84,6 +84,7 @@ npm install hexo-generator-search --save
 npm install hexo-admin --save
 ```
 # hexo配置
+Git仓库配好就可以进行发布了
 ```
 vim ~/chuanshuo843.github.io/_config.yml
 
@@ -164,6 +165,7 @@ pagination_dir: page
 theme: hexo-theme-next
 
 # Deployment
+#这个配github的仓库地址,发布失败请检测 ssh key 和 hexo-deployer-git 扩展
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
     type: git
@@ -194,6 +196,7 @@ sitemap:
     path: sitemap.xml
 ```
 # hexo-next主题配置
+[NexT主题使用文档](http://theme-next.iissnan.com/getting-started.html)
 ```
 vim ~/chuanshuo843.github.io/themes/hexo-theme-next/_config.yml
 
