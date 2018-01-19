@@ -64,12 +64,12 @@ import (
 	"time"
 )
 
-type _Header struct {
+type JwtHeader struct {
 	JwtHead string `json:"type"`
 	JwtAlg  string `json:"alg"`
 }
 
-type _Payload struct {
+type JwtPayload struct {
 	Iss  string `json:"iss"`  //Issuer，发行者
 	Sub  string `json:"sub"`  //Subject，主题
 	Aud  string `json:"aud"`  //Audience，观众
@@ -80,100 +80,96 @@ type _Payload struct {
 	Jti  int64  `json:"jti"`  //JWT ID
 }
 
-type Jwt struct{}
+type JwtSecret struct {
+	Key string `json:"key"` //秘钥
+}
 
-var initPayload _Payload
+type Jwt struct {
+	Header  JwtHeader
+	Payload JwtPayload
+	Secret  JwtSecret
+}
 
-var initHeader _Header
-
-var secretKey string
-
-func init() {
-	//初始化秘钥
-	secretKey = "jwt_key"
-	//设置header头
-	initHeader.JwtHead = "JWT"
-	initHeader.JwtAlg = "HS256"
-	//设置payload
-	initPayload.Iss = "https://www.ganktools.com"
-	initPayload.Sub = "https://www.ganktools.com"
-	initPayload.Aud = "https://www.ganktools.com"
+//JWT 初始化
+func InitJwt() *Jwt{
+	jwt := &Jwt{}
+	//设置Header
+	jwt.Header.JwtAlg = "HS256"
+	jwt.Header.JwtHead = "JWT"
+	//设置Payload
+	jwt.Payload.Iss = "https://www.ganktools.com"
+	jwt.Payload.Sub = "https://www.ganktools.com"
+	jwt.Payload.Aud = "https://www.ganktools.com"
+	//设置加密秘钥
+	jwt.Secret.Key = "jwt_key"
+	return jwt
 }
 
 //编码JWT的Header头
-func (_header *_Header) EncodeHeader() string {
-	json_data, _ := json.Marshal(_header)
+func (header *JwtHeader) Encode() string {
+	json_data, _ := json.Marshal(header)
 	return base64.StdEncoding.EncodeToString(json_data)
 }
 
 //解码JWT的Header头
-func (_header *_Header) DecodeHeader(data string) bool {
-	decode_header, _ := base64.StdEncoding.DecodeString(data)
-	err_header := json.Unmarshal(decode_header, &_header)
-	if err_header != nil {
-		return false
+func (header *JwtHeader) Decode(data string) error {
+	headerStr, err := base64.StdEncoding.DecodeString(data)
+	if err != nil {
+		return err
 	}
-	return true
-}
-
-//编码payload部分
-func (_payload *_Payload) EncodePayload() string {
-	json_data, _ := json.Marshal(_payload)
-	return base64.StdEncoding.EncodeToString(json_data)
+	errJson := json.Unmarshal(headerStr, header)
+	if errJson != nil {
+		return errJson
+	}
+	return nil
 }
 
 //解码payload部分
-func (_payload *_Payload) DecodePayload(data string) bool {
-	decode_payload, _ := base64.StdEncoding.DecodeString(data)
-	err_payload := json.Unmarshal(decode_payload, &_payload)
-	if err_payload != nil {
-		return false
+func (payload *JwtPayload) Decode(data string) error {
+	payloadStr, err := base64.StdEncoding.DecodeString(data)
+	if err != nil {
+		return err
 	}
-	return true
+	errJson := json.Unmarshal(payloadStr, payload)
+	if errJson != nil {
+		return errJson
+	}
+	return nil
+}
+
+//编码JWT的payload部分
+func (payload *JwtPayload) Encode() string {
+	json_data, _ := json.Marshal(payload)
+	return base64.StdEncoding.EncodeToString(json_data)
 }
 
 //JWT的secret部分加密
-func signature(jwt, key string) string {
-	secret := []byte(key)
-	h := hmac.New(sha256.New, secret)
-	h.Write([]byte(jwt))
+func (secret *JwtSecret) Signature(header, payload string) string {
+	encode_jwt := header + "." + payload
+	h := hmac.New(sha256.New, []byte(secret.Key))
+	h.Write([]byte(encode_jwt))
 	return base64.StdEncoding.EncodeToString(h.Sum(nil))
 }
 
-//设置Issuer
-func (jwt *Jwt) SetIssuer(iss string) *Jwt {
-	initPayload.Iss = iss
-	return jwt
-}
-
-//设置Subject
-func (jwt *Jwt) SetSubject(sub string) *Jwt {
-	initPayload.Sub = sub
-	return jwt
-}
-
-//设置Audience
-func (jwt *Jwt) SetAudience(aud string) *Jwt {
-	initPayload.Aud = aud
-	return jwt
-}
-
-//设置Key
-func (jwt *Jwt) SetSecretKey(key string) {
-	secretKey = key
-}
-
 //JWT加密
-func (jwt *Jwt) Encode(exp int64, data string) string {
-	current_time := time.Now().Unix()
-	initPayload.Jti, initPayload.Iat, initPayload.Nbf = current_time, current_time, current_time
-	initPayload.Exp = exp
-	initPayload.Data = data
-	encode_header := initHeader.EncodeHeader()
-	encode_payload := initPayload.EncodePayload()
-	encode_jwt := encode_header + "." + encode_payload
-	secret := signature(encode_jwt, secretKey)
-	return encode_jwt + "." + secret
+func (jwt *Jwt) Encode() string {
+	headerStr := jwt.Header.Encode()
+	payloadStr := jwt.Payload.Encode()
+	return headerStr + "." + payloadStr + "." + jwt.Secret.Signature(headerStr, payloadStr)
+}
+
+//JWT解码
+func (jwt *Jwt) Decode(token string) error {
+	data := strings.Split(token, ".")
+	errHeader := jwt.Header.Decode(string(data[0]))
+	if errHeader != nil {
+		return errHeader
+	}
+	errPayload := jwt.Payload.Decode(string(data[1]))
+	if errPayload != nil {
+		return errPayload
+	}
+	return nil
 }
 
 //JWT检测
@@ -183,29 +179,27 @@ func (jwt *Jwt) Checkd(token string) bool {
 	if len(data) != 3 {
 		return false
 	}
+	//解码Token
+	errDeCode := jwt.Decode(token)
+	if errDeCode != nil {
+		return false
+	}
 	//检测Hash是否一致
-	secret := signature(string(data[0])+"."+string(data[1]), secretKey)
+	secret := jwt.Secret.Signature(string(data[0]), string(data[1]))
 	if secret != string(data[2]) {
 		return false
 	}
-	//解码Payload
-	if !initPayload.DecodePayload(string(data[1])) {
-		return false
-	}
 	//检测JWT是否过期
-	if initPayload.Exp <= time.Now().Unix() {
+	if jwt.Payload.Exp <= time.Now().Unix() {
 		return false
 	}
 	//检测什么时间之后可用
-	if initPayload.Nbf >= time.Now().Unix() {
+	if jwt.Payload.Nbf >= time.Now().Unix() {
 		return false
 	}
 	return true
 }
 
-func (jwt *Jwt) GetData() string {
-	return initPayload.Data
-}
 ```
 # Authorization
 
@@ -216,12 +210,7 @@ import (
 	"time"
     
 	"github.com/astaxie/beego"
-	"github.com/chuanshuo843/12306_server/utils/kyfw"
-)
-
-var (
-	kyfwUser kyfw.User
-   jwt utils.Jwt
+	"github.com/chuanshuo843/12306_server/utils"
 )
 
 // User
@@ -229,20 +218,31 @@ type UserController struct {
 	BaseController
 }
 
-//登录
+//登录12306
 func (u *UserController) Login() {
-	// key := u.GetString("key")
-	//用户登录
-	err := kyfwUser.Login(u.GetString("username"),u.GetString("password"),u.GetString("verify"))
-	if err != nil {
-		u.Fail().SetMsg(err.Error()).Send()
+	if u.Kyfw == nil {
+		u.Fail().SetMsg("获取用户数据失败").Send()
+		return
+	}
+	verify := u.GetString("verify")
+	username := u.GetString("username")
+	password := u.GetString("password")
+	errLogin := u.Kyfw.Login(username, password, verify)
+	if errLogin != nil {
+		u.Fail().SetMsg(errLogin.Error()).Send()
 	}
 	//生成JWT
-	jwt.SetSecretKey(beego.AppConfig.String("JwtKey"))
-	token := jwt.Encode(time.Now().Unix()+100000, `{"username":"`+kyfwUser.ClientUserName+`"}`)
+	jwt := utils.InitJwt()
+	jwt.Payload.Jti = time.Now().Unix()
+	jwt.Payload.Iat = time.Now().Unix() - 30    //减30秒以防请求过快
+	jwt.Payload.Nbf = time.Now().Unix() - 30    //减30秒以防请求过快
+	jwt.Payload.Exp = time.Now().Unix() + 43200 //有效期十二个小时
+	jwt.Payload.Data = `{"username":"` + u.Kyfw.LoginName + `"}`
+	token := jwt.Encode()
+	kyfws.Move(u.AppID, token)
+	u.res.IsLogin = u.Kyfw.IsLogin
 	reJson := map[string]string{"access_token": token}
 	u.Success().SetMsg("登录成功").SetData(reJson).Send()
-}
 }
 ```
 
@@ -265,6 +265,7 @@ func init() {
 		//登录
 		beego.NSRouter("/auth/login", &controllers.UserController{}, "Post:Login"),
 		beego.NSRouter("/auth/verifyCode", &controllers.UserController{}, "Get:VerifyCode"),
+		beego.NSRouter("/auth/init", &controllers.UserController{}, "Get:InitLogin"),
 		//车次处理
 		beego.NSNamespace("/schedule",
 			beego.NSBefore(Auth),
@@ -311,8 +312,7 @@ func Auth(ctx *context.Context) {
 			return
 		}
 		token := kv[1]
-		jwt := &utils.Jwt{}
-		jwt.SetSecretKey(beego.AppConfig.String("JwtKey"))
+		jwt := utils.InitJwt()
 		if !jwt.Checkd(token) {
 			AllowCross(ctx)
 			return
