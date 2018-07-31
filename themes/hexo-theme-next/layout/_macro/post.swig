@@ -221,7 +221,6 @@
           {% endif %}
 
           {% if theme.post_wordcount.wordcount or theme.post_wordcount.min2read %}
-            <div class="post-wordcount">
               {% if theme.post_wordcount.wordcount %}
                 {% if not theme.post_wordcount.separated_meta %}
                   <span class="post-meta-divider">|</span>
@@ -252,7 +251,6 @@
                   {{ min2read(post.content) }}
                 </span>
               {% endif %}
-            </div>
           {% endif %}
 
           {% if post.description and (not theme.excerpt_description or not is_index) %}
