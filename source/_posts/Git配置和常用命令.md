@@ -1,3 +1,4 @@
+---
 title: Git配置和常用命令
 author: DuanEnJian
 tags:
@@ -5,6 +6,7 @@ tags:
   - 其他
 categories:
   - 其他
+abbrlink: 3737903822
 date: 2017-12-27 21:50:00
 ---
 Git是一个分布式版本控制／软件配置管理软件，原来是linux内核开发者林纳斯·托瓦兹（Linus Torvalds）为了更好地管理linux内核开发而创立的。

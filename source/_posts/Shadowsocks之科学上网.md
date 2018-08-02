@@ -1,9 +1,11 @@
+---
 title: Shadowsocks之科学上网
 author: DuanEnJian
 tags:
   - 其他
 categories:
   - 其他
+abbrlink: 1570730903
 date: 2017-12-28 16:46:00
 ---
 Shadowsocks的运行原理与其他代理工具基本相同，使用特定的中转服务器完成数据传输。

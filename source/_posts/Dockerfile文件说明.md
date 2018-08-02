@@ -1,9 +1,11 @@
+---
 title: Dockerfile文件说明
 author: DuanEnJian
 tags:
   - Docker
 categories:
   - 其他
+abbrlink: 2974468587
 date: 2017-12-27 21:44:00
 ---
 指令的一般格式为 INSTRUCTION arguments ，指令包括 FROM 、 MAINTAINER 、 RUN 等。

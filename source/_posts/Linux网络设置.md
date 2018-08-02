@@ -1,3 +1,4 @@
+---
 title: Linux网络设置
 author: DuanEnJian
 tags:
@@ -5,6 +6,7 @@ tags:
   - Linux
 categories:
   - 运维
+abbrlink: 3139455287
 date: 2017-12-27 21:29:00
 ---
 # dns设置

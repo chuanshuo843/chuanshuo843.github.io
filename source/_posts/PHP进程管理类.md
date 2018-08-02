@@ -1,9 +1,11 @@
+---
 title: PHP进程管理类
 author: DuanEnJian
 tags:
   - PHP
 categories:
   - 开发
+abbrlink: 3090157541
 date: 2017-12-27 20:24:00
 ---
 PHP的进程控制支持实现了Unix方式的进程创建, 程序执行, 信号处理以及进程的中断。 进程控制不能被应用在Web服务器环境，当其被用于Web服务环境时可能会带来意外的结果。

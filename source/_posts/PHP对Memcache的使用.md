@@ -1,9 +1,11 @@
+---
 title: PHP对Memcache的使用
 author: DuanEnJian
 tags:
   - PHP
 categories:
   - 开发
+abbrlink: 3248770788
 date: 2017-12-27 20:40:00
 ---
 一台Memcache通常不能满足我们的需求，这就需要分布式部署。Memcached分布式部署方案通常会采用两种方式，一种是普通Hash分布，一种是一致性Hash分布。本篇将以PHP作为客户端，来分析两种方案。

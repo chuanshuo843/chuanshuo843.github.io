@@ -1,3 +1,4 @@
+---
 title: PHP使用Spl接口实现观察者模式
 author: DuanEnJian
 tags:
@@ -6,6 +7,7 @@ tags:
   - SPL标准库
 categories:
   - 开发
+abbrlink: 2990256094
 date: 2017-12-27 20:04:00
 ---
 SPL（Standard PHP Library）即标准 PHP 库，是 PHP 5 在面向对象上能力提升的真实写照，它由一系列内置的类、接口和函数构成。SPL 通过加入集合，迭代器，新的异常类型，文件和数据处理类等提升了 PHP 语言的生产力。它还提供了一些十分有用的特性，如本文要介绍的内置 Observer 设计模式。

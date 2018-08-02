@@ -1,9 +1,11 @@
+---
 title: Linux查看CPU信息
 author: DuanEnJian
 tags:
   - Linux
 categories:
   - 运维
+abbrlink: 474643588
 date: 2017-12-27 21:48:00
 ---
 # 查看逻辑CPU个数：

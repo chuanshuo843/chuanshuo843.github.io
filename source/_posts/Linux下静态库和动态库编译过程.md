@@ -1,3 +1,4 @@
+---
 title: Linux下静态库和动态库编译过程
 author: DuanEnJian
 tags:
@@ -5,6 +6,7 @@ tags:
   - Linux
 categories:
   - 开发
+abbrlink: 3393728657
 date: 2017-12-27 20:31:00
 ---
 1.动态库

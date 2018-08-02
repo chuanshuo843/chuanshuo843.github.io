@@ -1,9 +1,11 @@
+---
 title: PHP的Hook钩子实现
 author: DuanEnJian
 tags:
   - PHP
 categories:
   - 开发
+abbrlink: 4003041570
 date: 2017-12-27 20:27:00
 ---
 钩子就像一个”陷阱”、”监听器”,当A发送一个消息到B时，当消息还未到达目的地B时，被钩子拦截调出一部分代码做处理，这部分代码也叫钩子函数或者回调函数

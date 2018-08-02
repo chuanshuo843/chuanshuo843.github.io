@@ -1,9 +1,11 @@
+---
 title: ThinkPHP-Nginx-配置
 author: DuanEnJian
 tags:
   - Linux
 categories:
   - 运维
+abbrlink: 2666822391
 date: 2017-12-28 20:58:00
 ---
 ```

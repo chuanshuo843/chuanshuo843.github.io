@@ -1,9 +1,11 @@
+---
 title: GoogleChrome扩展开发
 author: DuanEnJian
 tags:
   - 其他
 categories:
   - 其他
+abbrlink: 2557955107
 date: 2017-12-28 16:32:00
 ---
 扩展程序允许您为 Chrome 浏览器增加功能，而不需要深入研究本机代码。您可以使用您在网页开发中已经很熟悉的核心技术（HTML、CSS 与 JavaScript）为 Chrome 浏览器创建新的扩展程序。如果您曾经编写过网页，您应该很快熟悉扩展程序的开发。

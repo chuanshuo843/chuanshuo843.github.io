@@ -1,9 +1,11 @@
+---
 title: 博客迁移到GitHub.io
 author: DuanEnJian
 tags:
   - 其他
 categories:
   - 运维
+abbrlink: 2960315663
 date: 2017-12-29 10:28:00
 ---
 github有一个很有爱的项目，叫做github pages，这个项目是给开发者建立一个私人页面，上面用来分享新颖的想法和自己写的代码，而且最主要的是，这个是免费而且没有空间流量限制的。由于对leanote的维护和数据的迁移感到麻烦，所以最近把博客迁移到了GitHub.io上面省去了服务器的成本和维护的便利,下面记录一下迁移过程

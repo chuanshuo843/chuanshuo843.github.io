@@ -1,3 +1,4 @@
+---
 title: PHP之快速排序的实现
 author: DuanEnJian
 tags:
@@ -5,6 +6,7 @@ tags:
   - 算法实现
 categories:
   - 开发
+abbrlink: 3462090578
 date: 2017-12-28 16:03:00
 ---
 快速排序（Quicksort）是对冒泡排序的一种改进。

@@ -1,9 +1,11 @@
+---
 title: Mysql查看索引使用状态
 author: DuanEnJian
 tags:
   - MySQL
 categories:
   - 数据库
+abbrlink: 1119887905
 date: 2017-12-27 21:05:00
 ---
 在分析查询性能时，考虑EXPLAIN关键字同样很管用。EXPLAIN关键字一般放在SELECT查询语句的前面，用于描述MySQL如何执行查询操作、以及MySQL成功返回结果集需要执行的行数。explain 可以帮助我们分析 select 语句,让我们知道查询效率低下的原因,从而改进我们查询,让查询优化器能够更好的工作。

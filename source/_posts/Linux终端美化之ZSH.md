@@ -1,3 +1,4 @@
+---
 title: Linux终端美化之ZSH
 author: DuanEnJian
 tags:
@@ -5,6 +6,7 @@ tags:
   - Linux
 categories:
   - 其他
+abbrlink: 3194097614
 date: 2017-12-28 16:58:00
 ---
 Zsh是一个Linux用户很少使用的shell，这是由于大多数Linux产品安装，以及默认使用bash shell。几乎每一款Linux产品都包含有zsh，通常可以用apt-get、urpmi或yum等包管理器进行安装

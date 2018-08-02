@@ -1,3 +1,4 @@
+---
 title: Crontab定时任务设置
 categories:
   - 运维
@@ -5,6 +6,7 @@ categories:
 tags:
   - Linux
 author: DuanEnJian
+abbrlink: 123452189
 date: 2017-12-27 16:49:00
 ---
 ```

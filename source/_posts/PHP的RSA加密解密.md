@@ -1,9 +1,11 @@
+---
 title: PHP的RSA加密解密
 tags:
   - PHP
 categories:
   - 开发
 author: DuanEnJian
+abbrlink: 1262273877
 date: 2017-12-27 17:45:00
 ---
 php服务端与客户端交互、提供开放api时，通常需要对敏感的部分api数据传输进行数据加密，这时候rsa非对称加密就能派上用处了，下面通过一个例子来说明如何用php来实现数据的加密解密

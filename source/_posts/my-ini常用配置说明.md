@@ -1,9 +1,11 @@
+---
 title: my.ini常用配置说明
 author: DuanEnJian
 tags:
   - MySQL
 categories:
   - 数据库
+abbrlink: 2980798673
 date: 2017-12-27 21:03:00
 ---
 MySQL配置文件在Windows下叫my.ini，在MySQL的安装根目录下；在Linux下叫my.cnf，该文件位于/etc/my.cnf

@@ -6,7 +6,7 @@
 title: o时过境迁心难沉
 subtitle: 记录看到和遇到的问题和解决方式
 description: 苏老堤边玉一林，六桥风月是知音。任他桃李争欢赏，不为繁华易素心。
-author: DuanEnJian
+author: o时过境迁心难沉
 language: zh-Hans
 timezone: Asia/Shanghai
 
@@ -14,7 +14,8 @@ timezone: Asia/Shanghai
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://www.ganktools.com
 root: /
-permalink: :year/:month/:day/:title/
+#permalink: :year/:month/:day/:title.html
+permalink: article/:abbrlink.html
 permalink_defaults:
 
 # Directory
@@ -25,7 +26,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: README.md
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -55,8 +56,16 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  其他: other
+  开发: develop
+  数据库: sql
+  运维: operation
 tag_map:
-
+  RFC标准系列: rfc
+  SPL标准库: spl
+  其他: other
+  算法实现: algorithm 
+  设计模式: design
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
@@ -80,6 +89,11 @@ deploy:
     type: git 
     repository: git@github.com:chuanshuo843/chuanshuo843.github.io.git
     branch: master
+# 生成文章特定链接    
+# npm install hexo-abbrlink --save
+abbrlink:
+  alg: crc32  #support crc16(default) and crc32
+  rep: hex    #support dec(default) and hex
 
 # 配置RSS
 # npm install hexo-generator-feed

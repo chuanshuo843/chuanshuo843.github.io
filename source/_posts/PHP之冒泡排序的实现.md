@@ -1,3 +1,4 @@
+---
 title: PHP之冒泡排序的实现
 author: DuanEnJian
 tags:
@@ -5,6 +6,7 @@ tags:
   - 算法实现
 categories:
   - 开发
+abbrlink: 1792372328
 date: 2017-12-28 15:58:00
 ---
 冒泡排序（Bubble Sort），是一种计算机科学领域的较简单的排序算法。

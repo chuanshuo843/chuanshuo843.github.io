@@ -1,3 +1,4 @@
+---
 title: PHP的单例模式实现
 author: DuanEnJian
 tags:
@@ -5,6 +6,7 @@ tags:
   - 设计模式
 categories:
   - 开发
+abbrlink: 3754881030
 date: 2017-12-27 20:43:00
 ---
 单例模式一般使用在资源共享和需要控制资源的情况下。

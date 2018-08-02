@@ -1,9 +1,11 @@
+---
 title: "设置mysql重启后,\_Events自启动"
 author: DuanEnJian
 tags:
   - MySQL
 categories:
   - 数据库
+abbrlink: 2934597634
 date: 2017-12-27 21:16:00
 ---
 mysql5.1版本开始引进event概念。event既“时间触发器”，与triggers的事件触发不同，event类似与linux crontab计划任务，用于时间触发。通过单独或调用存储过程使用，在某一特定的时间点，触发相关的SQL语句或存储过程。

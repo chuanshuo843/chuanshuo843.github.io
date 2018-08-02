@@ -1,9 +1,11 @@
+---
 title: 如何实现一个高效的Mysql分页
 author: DuanEnJian
 tags:
   - MySQL
 categories:
   - 数据库
+abbrlink: 2467272890
 date: 2017-12-28 16:20:00
 ---
 Mysql的优化是非常重要的。其他最常用也最需要优化的就是limit。Mysql的limit给分页带来了极大的方便，但数据量一大的时候，limit的性能就急剧下降。

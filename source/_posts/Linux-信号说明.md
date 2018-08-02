@@ -1,3 +1,4 @@
+---
 title: Linux 信号说明
 author: DuanEnJian
 tags:
@@ -5,6 +6,7 @@ tags:
   - Linux
 categories:
   - 其他
+abbrlink: 3489224698
 date: 2017-12-27 21:32:00
 ---
 信号是进程之间互传消息的一种方法,俗称软件中断。它提供了一种处理异步事件的方法。

@@ -1,9 +1,11 @@
+---
 title: Nginx SSL-https配置
 author: DuanEnJian
 tags:
   - Linux
 categories:
   - 运维
+abbrlink: 1090748342
 date: 2017-12-27 21:37:00
 ---
 要保证Web浏览器到服务器的安全连接，HTTPS几乎是唯一选择。HTTPS其实就是HTTP over SSL，也就是让HTTP连接建立在SSL安全连接之上。

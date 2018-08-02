@@ -1,3 +1,4 @@
+---
 title: Kubernetes集群部署方案
 author: DuanEnJian
 tags:
@@ -5,6 +6,7 @@ tags:
   - Docker
 categories:
   - 运维
+abbrlink: 4261225024
 date: 2017-12-28 20:44:00
 ---
 Docker的流行激活了一直不温不火的 PaaS，随之而来的是各类 Micro-PaaS的出现，Kubernetes是其中最具代表性的一员，它是 Google多年大规模容器管理技术的开源版本。越来越多的企业被迫面对互联网规模所带来的各类难题，而 Kubernetes以其优秀的理念和设计正在逐步形成新的技术标准，对于任何领域的运营总监、架构师和软件工程师来说，都是一个绝佳的突破机会。

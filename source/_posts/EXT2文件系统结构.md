@@ -1,9 +1,11 @@
+---
 title: EXT2文件系统结构
 author: DuanEnJian
 tags:
   - Linux
 categories:
   - 其他
+abbrlink: 1220878275
 date: 2017-12-28 19:38:00
 ---
 EXT2第二代扩展文件系统（英语：second extended filesystem，缩写为 ext2），是LINUX内核所用的文件系统。它开始由Rémy Card设计，用以代替ext，于1993年1月加入linux核心支持之中。ext2 的经典实现为LINUX内核中的ext2fs文件系统驱动，最大可支持2TB的文件系统，至linux核心2.6版时，扩展到可支持32TB。其他的实现包括GNU Hurd，Mac OS X (第3方)，Darwin (第3方)，BSD。ext2为数个LINUX发行版的默认文件系统，如Debian、Red Hat Linux等

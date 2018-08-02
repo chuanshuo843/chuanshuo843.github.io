@@ -1,9 +1,11 @@
+---
 title: MySql避免重复插入记录方法
 author: DuanEnJian
 tags:
   - MySQL
 categories:
   - 数据库
+abbrlink: 58818159
 date: 2017-12-27 21:20:00
 ---
 # 使用Ignore

@@ -1,3 +1,4 @@
+---
 title: PHP之spl_autoload_register使用说明
 author: DuanEnJian
 tags:
@@ -5,6 +6,7 @@ tags:
 categories:
   - 开发
   - ''
+abbrlink: 3799683601
 date: 2017-12-27 19:41:00
 ---
 spl_autoload_register — 注册给定的函数作为 __autoload 的实现

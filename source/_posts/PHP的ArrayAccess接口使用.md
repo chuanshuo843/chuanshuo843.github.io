@@ -1,9 +1,11 @@
+---
 title: PHP的ArrayAccess接口使用
 author: DuanEnJian
 tags:
   - PHP
 categories:
   - 开发
+abbrlink: 904739967
 date: 2017-12-27 20:29:00
 ---
 PHP5 中多了一系列新接口。同时这些接口和一些实现的 Class 被归为 Standard PHP Library(SPL)。在 PHP5 中加入了很多特性，使类的重载 (Overloading) 得到进一步的加强。ArrayAccess 的作用是使你的 Class 看起来像一个数组(PHP 的数组)。这点和 C# 的 Index 特性很相似。

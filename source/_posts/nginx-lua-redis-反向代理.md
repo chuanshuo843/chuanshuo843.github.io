@@ -1,9 +1,11 @@
+---
 title: nginx-lua-redis-反向代理
 author: DuanEnJian
 tags:
   - Linux
 categories:
   - 运维
+abbrlink: 2989278071
 date: 2017-12-28 20:56:00
 ---
 ```

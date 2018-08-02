@@ -1,3 +1,4 @@
+---
 title: Linux安装ODBC_MYSQL连接
 author: DuanEnJian
 tags:
@@ -5,6 +6,7 @@ tags:
   - Linux
 categories:
   - 运维
+abbrlink: 1999156721
 date: 2017-12-27 21:41:00
 ---
 ODBC连接器是一个数据库抽象层，它可以让Asterisk与广泛 的数据库进行通信，而无需开发人员为Asterisk需要的每一个数据库创建一个单独的数据库连接。这样可以节省大量的开发工作和代码维护。因为我们在 Asterisk和数据库之间添加了其他应用层可能会有轻微的性能损失，但当你需要Asterisk系统功能强大，灵活的数据库功能时可以缓解适当的设计 是值得的。

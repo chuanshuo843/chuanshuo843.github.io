@@ -1,9 +1,11 @@
+---
 title: 基于Docker和Jenkins的CI改造
 author: DuanEnJian
 tags:
   - Linux
 categories:
   - 运维
+abbrlink: 4226450635
 date: 2017-12-28 19:22:00
 ---
 持续集成是一种软件开发实践，对于提高软件开发效率并保障软件开发质量提供了理论基础，旨在提供一个开放易用的软件平台，使持续集成变成可能。为了以后方便现在把博客迁移到了Docker上面,由于只有一台机器所以这里就没有使用Docker Registry了

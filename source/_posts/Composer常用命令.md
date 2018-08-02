@@ -1,9 +1,11 @@
+---
 title: Composer常用命令
 author: DuanEnJian
 tags:
   - PHP
 categories:
   - 开发
+abbrlink: 2869907571
 date: 2017-12-27 20:35:00
 ---
 Composer 是 PHP5以上 的一个依赖管理工具。它允许你申明项目所依赖的代码库，它会在你的项目中为你安装他们。Composer 不是一个包管理器。是的，它涉及 "packages" 和 "libraries"，但它在每个项目的基础上进行管理，在你项目的某个目录中（例如 vendor）进行安装。默认情况下它不会在全局安装任何东西。因此，这仅仅是一个依赖管理。

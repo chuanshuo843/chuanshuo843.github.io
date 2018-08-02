@@ -1,3 +1,4 @@
+---
 title: PHP之双向链表
 author: DuanEnJian
 tags:
@@ -5,6 +6,7 @@ tags:
   - SPL标准库
 categories:
   - 开发
+abbrlink: 2340898584
 date: 2017-12-28 19:58:00
 ---
 SPL，PHP 标准库（Standard PHP Library） ，从 PHP 5.0 起内置的组件和接口，且从 PHP5.3 已逐渐的成熟。SPL 在所有的 PHP5 开发环境中被内置，同时无需任何设置。

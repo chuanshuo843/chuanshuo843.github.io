@@ -1,3 +1,4 @@
+---
 title: Metasploit安装
 author: DuanEnJian
 tags:
@@ -5,6 +6,7 @@ tags:
   - Linux
 categories:
   - 其他
+abbrlink: 237147173
 date: 2017-12-27 21:25:00
 ---
 # 安装pgsql

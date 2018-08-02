@@ -1,9 +1,11 @@
+---
 title: Supervisor的使用和配置
 author: DuanEnJian
 tags:
   - Linux
 categories:
   - 运维
+abbrlink: 2050126218
 date: 2017-12-27 21:56:00
 ---
 Supervisor是一个进程监控程序。

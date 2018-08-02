@@ -1,9 +1,11 @@
+---
 title: PHP把 session存到memcache中
 author: DuanEnJian
 tags:
   - PHP
 categories:
   - 开发
+abbrlink: 3495718585
 date: 2017-12-27 20:53:00
 ---
 企业网站用户数越来越多,同时在线人数越来越多,最大同时在线达100万之多,由于session文件是小文件存储,设想每个用户大概2K左右数据,NFS频繁读取导致IO成为瓶颈,虽然可以更改配置以分级目录的形式保持session但还是没有达到最优设计,但如果把session放在内存中,内存存取快速,就再也不用担心海量用户的压力了!

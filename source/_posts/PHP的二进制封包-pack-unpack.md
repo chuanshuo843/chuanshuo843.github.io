@@ -1,9 +1,11 @@
+---
 title: PHP的二进制封包(pack/unpack)
 author: DuanEnJian
 tags:
   - PHP
 categories:
   - 开发
+abbrlink: 706730064
 date: 2017-12-27 19:57:00
 ---
 通过 TCP/IP 协议传输数据经常会用二进制数据包的形式，在 PHP 中可使用 pack() 和 unpack() 函数进行二进制封包和解包，通过 socket 建立 TCP 连接，并将数据包传输出去。

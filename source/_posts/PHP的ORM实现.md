@@ -1,9 +1,11 @@
+---
 title: PHP的ORM实现
 author: DuanEnJian
 tags:
   - PHP
 categories:
   - 开发
+abbrlink: 4014080582
 date: 2017-12-27 20:15:00
 ---
 对象关系映射（英语：Object Relation Mapping，简称ORM，或O/RM，或O/R mapping），是一种程序技术，用于实现面向对象编程语言里不同类型系统的数据之间的转换。从效果上说，它其实是创建了一个可在编程语言里使用的“虚拟对象数据库”。
