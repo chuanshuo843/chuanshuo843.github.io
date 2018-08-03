@@ -14,10 +14,15 @@ gulp.task('minify-html', function() {
   return gulp.src('./public/**/*.html')
     .pipe(htmlclean())
     .pipe(htmlmin({
-         removeComments: true,
-         minifyJS: true,
-         minifyCSS: true,
-         minifyURLs: true,
+        removeComments: true,
+        collapseWhitespace: true,
+        collapseBooleanAttributes: true,
+        removeEmptyAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true,
     }))
     .pipe(gulp.dest('./public'))
 });
