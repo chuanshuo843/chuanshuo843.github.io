@@ -1,4 +1,3 @@
----
 title: Git多个账户秘钥管理
 author: DuanEnJian
 tags:
@@ -21,7 +20,7 @@ config  id_rsa  id_rsa_gs  id_rsa_gs.pub  id_rsa.pub  known_hosts
 ```
 # 远程主机添加公钥
 
-![upload successful](/images/image.png)
+![添加GITHUB公钥](/images/20562200c186b51b0fc0c26.png)
 # 编辑ssh的cofnig文件
 ```
 vim ~/.ssh/config
