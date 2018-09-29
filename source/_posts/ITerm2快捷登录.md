@@ -78,14 +78,6 @@ iterm2 ------> Profiles ------>  当前配置的profiles ------> Advanced ------
 Regular expression:password:
 Action: Send Text
 Parameters: 密码 + /r
-//rz sz 上传下载
-Regular expression:\*\*B0100
-Action: Run Silent Coprocess
-Parameters: /usr/local/bin/iterm2-send-zmodem.sh
-
-Regular expression:\*\*B00000000000000
-Action: Run Silent Coprocess
-Parameters: /usr/local/bin/iterm2-recv-zmodem.sh
 ```
 ![peizi_2](/images/WX20180929-114601.png)
 ## 跳板机配置
@@ -98,17 +90,9 @@ iterm2 ------> Profiles ------>  当前配置的profiles ------> General
 ```
 iterm2 ------> Profiles ------>  当前配置的profiles ------> Advanced ------> Triggers的Edit按钮
 //自动登录
-Regular expression:password:
+Regular expression:.pem':
 Action: Send Text
 Parameters: 密码 + /r
-//rz sz 上传下载
-Regular expression:\*\*B0100
-Action: Run Silent Coprocess
-Parameters: /usr/local/bin/iterm2-send-zmodem.sh
-
-Regular expression:\*\*B00000000000000
-Action: Run Silent Coprocess
-Parameters: /usr/local/bin/iterm2-recv-zmodem.sh
 ```
 ![peizi_2](/images/WX20180929-114701.png)
 
