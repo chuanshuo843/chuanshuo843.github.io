@@ -1,13 +1,14 @@
-title: MySQL order by limit 导致的分页数据重复问题
+title: Mysql之limit分页数据重复问题
 author: o时过境迁心难沉
-abbrlink: acf147a9
+abbrlink: ec473fdc
 tags:
-  - Mysql
+  - MySQL
 categories:
   - 开发
-date: 2018-10-22 14:21:00
+date: 2018-10-22 15:38:00
 ---
 在MySQL中我们通常会采用limit来进行翻页查询，比如limit(0,10)表示列出第一页的10条数据，limit(10,10)表示列出第二页。但是，当limit遇到order by的时候，可能会出现翻到第二页的时候，竟然又出现了第一页的记录。
+
 <!-- more -->
 
 # 问题
@@ -15,8 +16,8 @@ date: 2018-10-22 14:21:00
 
 # 解决
 
- 1. 给需要排序的字段添加索引（索引本身是有序的，添加索引会按照索引的顺序进行排序返回）
- 2. 在排序字段后面再添加一个唯一值的字段排序，比如id（保证参与排序的值不一样就行）
+ 给需要排序的字段添加索引（索引本身是有序的，添加索引会按照索引的顺序进行排序返回）
+ 在排序字段后面再添加一个唯一值的字段排序，比如id（保证参与排序的值不一样就行）
    
 # 参考
 [8.2.1.17 LIMIT Query Optimization](https://dev.mysql.com/doc/refman/5.7/en/limit-optimization.html)
