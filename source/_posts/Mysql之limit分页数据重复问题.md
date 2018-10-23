@@ -23,4 +23,3 @@ date: 2018-10-22 15:38:00
 [8.2.1.17 LIMIT Query Optimization](https://dev.mysql.com/doc/refman/5.7/en/limit-optimization.html)
 [Mysql order by与limit混用陷阱](http://wdmcygah.iteye.com/blog/2370591)
 [MySQL order by limit 分页数据重复问题](https://juejin.im/post/5af9537bf265da0b9e652dea)
-[MySQL order by limit 导致的分页数据重复问题](http://www.foreverlakers.com/2018/01/mysql-order-by-limit-%E5%AF%BC%E8%87%B4%E7%9A%84%E5%88%86%E9%A1%B5%E6%95%B0%E6%8D%AE%E9%87%8D%E5%A4%8D%E9%97%AE%E9%A2%98/)
