@@ -1,0 +1,2 @@
+Sitemap: https://www.ganktools.com/sitemap.xml
+Sitemap: https://www.ganktools.com/baidusitemap.xml

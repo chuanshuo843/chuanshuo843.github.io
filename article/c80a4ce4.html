@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+  <meta name="google-site-verification" content="KLBDo8oHfQZC--5hVC7ioniWl2JfIndodrklBAJvMo4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="PHP,其他,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="o时过境迁心难沉" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="rabbitMQ是一款基于AMQP协议的消息中间件，它能够在应用之间提供可靠的消息传输。在易用性，扩展性，高可用性上表现优秀。使用消息中间件利于应用之间的解耦，生产者（客户端）无需知道消费者（服务端）的存在。而且两端可以使用不同的语言编写，大大提供了灵活性。">
+<meta name="keywords" content="PHP,其他">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RabbitMQ概述">
+<meta property="og:url" content="https://www.ganktools.com/article/c80a4ce4.html">
+<meta property="og:site_name" content="o时过境迁心难沉">
+<meta property="og:description" content="rabbitMQ是一款基于AMQP协议的消息中间件，它能够在应用之间提供可靠的消息传输。在易用性，扩展性，高可用性上表现优秀。使用消息中间件利于应用之间的解耦，生产者（客户端）无需知道消费者（服务端）的存在。而且两端可以使用不同的语言编写，大大提供了灵活性。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://www.ganktools.com/images/jianjie_sss.png">
+<meta property="og:image" content="https://www.ganktools.com/images/zhilian_sss.png">
+<meta property="og:image" content="https://www.ganktools.com/images/shanxing_ssss.png">
+<meta property="og:image" content="https://www.ganktools.com/images/zhuti_sss.png">
+<meta property="og:updated_time" content="2019-06-19T07:05:59.636Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="RabbitMQ概述">
+<meta name="twitter:description" content="rabbitMQ是一款基于AMQP协议的消息中间件，它能够在应用之间提供可靠的消息传输。在易用性，扩展性，高可用性上表现优秀。使用消息中间件利于应用之间的解耦，生产者（客户端）无需知道消费者（服务端）的存在。而且两端可以使用不同的语言编写，大大提供了灵活性。">
+<meta name="twitter:image" content="https://www.ganktools.com/images/jianjie_sss.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://www.ganktools.com/article/c80a4ce4.html">
+
+
+
+
+
+  <title>RabbitMQ概述 | o时过境迁心难沉</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">o时过境迁心难沉</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">记录看到和遇到的问题和解决方式</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.ganktools.com/article/c80a4ce4.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="o时过境迁心难沉">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="https://himg.bdimg.com/sys/portrait/item/21cd636875616e7368756f3834339e11.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="o时过境迁心难沉">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">RabbitMQ概述</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-29T14:11:00+08:00">
+                2018-08-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/develop/" itemprop="url" rel="index">
+                    <span itemprop="name">开发</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/article/c80a4ce4.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/article/c80a4ce4.html" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 浏览
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
+            </span>
+          
+
+          
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2.6k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  11
+                </span>
+              
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>rabbitMQ是一款基于AMQP协议的消息中间件，它能够在应用之间提供可靠的消息传输。在易用性，扩展性，高可用性上表现优秀。使用消息中间件利于应用之间的解耦，生产者（客户端）无需知道消费者（服务端）的存在。而且两端可以使用不同的语言编写，大大提供了灵活性。</p>
+<a id="more"></a>
+<p><img src="/images/jianjie_sss.png" alt="upload successful"></p>
+<h1 id="交换机"><a href="#交换机" class="headerlink" title="交换机"></a>交换机</h1><h2 id="直连交换机"><a href="#直连交换机" class="headerlink" title="直连交换机"></a>直连交换机</h2><p>直连交换机是一种带路由功能的交换机，一个队列会和一个交换机绑定，除此之外再绑定一个routing_key，当消息被发送的时候，需要指定一个binding_key，这个消息被送达交换机的时候，就会被这个交换机送到指定的队列里面去。同样的一个binding_key也是支持应用到多个队列中的。</p>
+<p><img src="/images/zhilian_sss.png" alt="upload successful"></p>
+<h2 id="扇形交换机"><a href="#扇形交换机" class="headerlink" title="扇形交换机"></a>扇形交换机</h2><p>扇形交换机是最基本的交换机类型，它所能做的事情非常简单———广播消息。扇形交换机会把能接收到的消息全部发送给绑定在自己身上的队列。因为广播不需要“思考”，所以扇形交换机处理消息的速度也是所有的交换机类型里面最快的。</p>
+<p><img src="/images/shanxing_ssss.png" alt="upload successful"></p>
+<h2 id="主题交换机"><a href="#主题交换机" class="headerlink" title="主题交换机"></a>主题交换机</h2><p>主题交换机通过模式匹配分配消息的路由键属性，将路由键和某个模式进行匹配，此时队列需要绑定到一个模式上。它将路由键和绑定键的字符串切分成单词，这些单词之间用点隔开。它同样也会识别两个通配符：符号“#”和符号“<em>”。#匹配0个或多个单词，</em>匹配不多不少一个单词。</p>
+<p><img src="/images/zhuti_sss.png" alt="upload successful"></p>
+<h2 id="首部交换机"><a href="#首部交换机" class="headerlink" title="首部交换机"></a>首部交换机</h2><p>首部交换机是忽略routing_key的一种路由方式。路由器和交换机路由的规则是通过Headers信息来交换的，这个有点像HTTP的Headers。将一个交换机声明成首部交换机，绑定一个队列的时候，定义一个Hash的数据结构，消息发送的时候，会携带一组hash数据结构的信息，当Hash的内容匹配上的时候，消息就会被写入队列。<br>绑定交换机和队列的时候，Hash结构中要求携带一个键“x-match”，这个键的Value可以是any或者all，这代表消息携带的Hash是需要全部匹配(all)，还是仅匹配一个键(any)就可以了。相比直连交换机，首部交换机的优势是匹配的规则不被限定为字符串(string)。</p>
+<h1 id="虚拟主机-交换机-队列-绑定"><a href="#虚拟主机-交换机-队列-绑定" class="headerlink" title="虚拟主机,交换机,队列,绑定"></a>虚拟主机,交换机,队列,绑定</h1><ul>
+<li>虚拟主机：一个虚拟主机持有一组交换机、队列和绑定。为什么需要多个虚拟主机呢？很简单，RabbitMQ当中，用户只能在虚拟主机的粒度进行权限控制。 因此，如果需要禁止A组访问B组的交换机/队列/绑定，必须为A和B分别创建一个虚拟主机。每一个RabbitMQ服务器都有一个默认的虚拟主机“/”。</li>
+<li>交换机：Exchange 用于转发消息，但是它不会做存储 ，如果没有 Queue bind 到 Exchange 的话，它会直接丢弃掉 Producer 发送过来的消息。常用交换机又分为3种- - 类型：Direct Exchange，Topic Exchange，Fanout Exchange。</li>
+<li>绑定：也就是交换机需要和队列相绑定，这其中如上图所示，是多对多的关系。</li>
+</ul>
+<h1 id="消息确认与持久化"><a href="#消息确认与持久化" class="headerlink" title="消息确认与持久化"></a>消息确认与持久化</h1><ul>
+<li>基于现在的代码,一旦RabbitMQ将消息发送给了消费者,就会从内存中删除,这时候如果正在执行任务的消费者挂了,会丢失消息,也无法把它讲给另外一个消费者去处理.</li>
+<li>所以为了确保消息不丢失,RabbitMQ支持消息应答.消费者发送一个消息应答,告诉RabbitMQ这个消息已经接收并处理完了.</li>
+<li>如果一个消费者挂掉却没有发送应答，RabbitMQ会理解为这个消息没有处理完全，然后交给另一个消费者去重新处理,十分可靠.</li>
+</ul>
+<p>在之前,我们会使用 channel.basicConsume(channelName,true,consumer) ,true表示接收到消息后,会自动反馈消息给服务器.那么首先我们要将autoAck关闭,等我们处理完消息,手动去确认.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">QueueingConsumer consumer = new QueueingConsumer(channel);</span><br><span class="line">boolean autoAck = false;</span><br><span class="line">channel.basicConsume(&quot;hello&quot;, autoAck, consumer);</span><br></pre></td></tr></table></figure>
+
+<p>接着手动确认</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">channel.basicAck(delivery.getEnvelope().getDeliveryTag() , false);</span><br></pre></td></tr></table></figure>
+
+<p>现在我们确保了消费者死亡,任务也不会丢失.但是如果整个rabbitMQ服务器都挂了,那消息还是会丢失.所以有时候我们需要让消息持久化.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">boolean durable = true;</span><br><span class="line">channel.queueDeclare(channelName, durable, false, false, null);</span><br></pre></td></tr></table></figure>
+
+<p>我们的队列已经不会丢失了,还需要在生产者里将消息标记为持久性的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MessageProperties.PERSISTENT_TEXT_PLAIN</span><br></pre></td></tr></table></figure>
+
+<h1 id="实例代码"><a href="#实例代码" class="headerlink" title="实例代码"></a>实例代码</h1><p>Rabbitmq.php</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">namespace app\common\library;</span><br><span class="line"></span><br><span class="line">use PhpAmqpLib\Channel\AMQPChannel;</span><br><span class="line">use PhpAmqpLib\Connection\AMQPStreamConnection;</span><br><span class="line">use PhpAmqpLib\Message\AMQPMessage;</span><br><span class="line">use PhpAmqpLib\Wire\AMQPTable;</span><br><span class="line">use think\Config;</span><br><span class="line">use think\Log;</span><br><span class="line"></span><br><span class="line">class Rabbitmq</span><br><span class="line">&#123;</span><br><span class="line">    /**</span><br><span class="line">     * 配置</span><br><span class="line">     *</span><br><span class="line">     * @var array</span><br><span class="line">     */</span><br><span class="line">    public $config;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * @var AMQPChannel</span><br><span class="line">     */</span><br><span class="line">    public $channel;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * initialized</span><br><span class="line">     *</span><br><span class="line">     * @var AMQPStreamConnection</span><br><span class="line">     */</span><br><span class="line">    public $connect;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    public function __construct(array $config = [])</span><br><span class="line">    &#123;</span><br><span class="line">        $this-&gt;config = array_merge(Config::get(&apos;rabbitmq&apos;), $config);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 处理消息格式  A Message for use with the Channnel.basic_* methods.</span><br><span class="line">     *</span><br><span class="line">     * @param $msg</span><br><span class="line">     * @param $message_durable</span><br><span class="line">     * @return AMQPMessage</span><br><span class="line">     */</span><br><span class="line">    public function message($msg, $message_durable)</span><br><span class="line">    &#123;</span><br><span class="line">        if (is_array($msg)) &#123;</span><br><span class="line">            $msg = json_encode($msg);</span><br><span class="line">        &#125;</span><br><span class="line">        if (!is_object($msg) &amp;&amp; $message_durable === true) &#123;</span><br><span class="line">            return new AMQPMessage($msg, [&apos;delivery_mode&apos; =&gt; AMQPMessage::DELIVERY_MODE_PERSISTENT]);</span><br><span class="line">        &#125;</span><br><span class="line">        return new AMQPMessage($msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * acknowledge one or more messages</span><br><span class="line">     *</span><br><span class="line">     * @param string $delivery_tag</span><br><span class="line">     */</span><br><span class="line">    public function basicAck($delivery_tag)</span><br><span class="line">    &#123;</span><br><span class="line">        $this-&gt;channel-&gt;basic_ack($delivery_tag);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 生产者 生产实时队列 只生产一个队列</span><br><span class="line">     *</span><br><span class="line">     * @param        $data</span><br><span class="line">     * @param        $queue</span><br><span class="line">     * @param        $exchange_name</span><br><span class="line">     * @param string $routing_key</span><br><span class="line">     * @param string $type</span><br><span class="line">     * @param bool   $queue_durable</span><br><span class="line">     * @param bool   $message_durable</span><br><span class="line">     */</span><br><span class="line">    public function send(</span><br><span class="line">        $data, $queue, $exchange_name, $routing_key = &apos;&apos;, $type = &apos;direct&apos;, $queue_durable = false, $message_durable = false</span><br><span class="line">    ) &#123;</span><br><span class="line">        $this-&gt;connect = new AMQPStreamConnection(</span><br><span class="line">            $this-&gt;config[&apos;host&apos;],</span><br><span class="line">            $this-&gt;config[&apos;port&apos;],</span><br><span class="line">            $this-&gt;config[&apos;login&apos;],</span><br><span class="line">            $this-&gt;config[&apos;password&apos;],</span><br><span class="line">            $this-&gt;config[&apos;vhost&apos;]</span><br><span class="line">        );</span><br><span class="line">        $this-&gt;channel = $this-&gt;connect-&gt;channel();</span><br><span class="line"></span><br><span class="line">        //声明交换机</span><br><span class="line">        $this-&gt;channel-&gt;exchange_declare($exchange_name, $type, false, $message_durable, false, false, false, [], null);</span><br><span class="line"></span><br><span class="line">        //声明队列</span><br><span class="line">        $this-&gt;channel-&gt;queue_declare($queue, false, $queue_durable, false, false, false, [], null);</span><br><span class="line"></span><br><span class="line">        //绑定交换机与队列</span><br><span class="line">        $this-&gt;channel-&gt;queue_bind($queue, $exchange_name, $routing_key, false, [], null);</span><br><span class="line"></span><br><span class="line">        //处理压入消息格式</span><br><span class="line">        $msg = $this-&gt;message($data, $message_durable);</span><br><span class="line"></span><br><span class="line">        //压入消息到交换机</span><br><span class="line">        $this-&gt;channel-&gt;basic_publish($msg, $exchange_name, $routing_key, false, false, null);</span><br><span class="line"></span><br><span class="line">        //关闭</span><br><span class="line">        $this-&gt;channel-&gt;close(); // 关闭信道</span><br><span class="line">        $this-&gt;connect-&gt;close(); // 关闭链接</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 延时生产者 生产延时队列 生产两个队列（1个延时死信队列，1个实时消费队列）</span><br><span class="line">     *</span><br><span class="line">     * @param  array|string $data  消息内容</span><br><span class="line">     * @param string        $delay_queue  延时队列</span><br><span class="line">     * @param string        $delay_exchange_name 延时交换机</span><br><span class="line">     * @param string        $delay_routing_key 延时队列routing_key</span><br><span class="line">     * @param string        $delay_type 延时交换机类型</span><br><span class="line">     * @param int           $delay_expire 延时队列声明周期（过期会触发死信规则）</span><br><span class="line">     * @param bool          $delay_queue_durable 延时队列持久化</span><br><span class="line">     * @param bool          $delay_message_durable 延时消息持久化</span><br><span class="line">     * @param string        $receive_queue 接收队列（接收死信规则）</span><br><span class="line">     * @param string        $receive_exchange_name 接收交换机</span><br><span class="line">     * @param string        $receive_routing_key 接收队列routing_key</span><br><span class="line">     * @param string        $receive_type 接收交换机类型</span><br><span class="line">     * @param bool          $receive_queue_durable 接收队列持久化</span><br><span class="line">     * @param bool          $receive_message_durable 接收消息持久化</span><br><span class="line">     */</span><br><span class="line">    public function sendDelay(</span><br><span class="line">        $data,</span><br><span class="line">        $delay_queue,</span><br><span class="line">        $delay_exchange_name,</span><br><span class="line">        $delay_routing_key = &apos;&apos;,</span><br><span class="line">        $delay_type = &apos;direct&apos;,</span><br><span class="line">        $delay_expire = 0,</span><br><span class="line">        $delay_queue_durable = false,</span><br><span class="line">        $delay_message_durable = false,</span><br><span class="line">        $receive_queue,</span><br><span class="line">        $receive_exchange_name,</span><br><span class="line">        $receive_routing_key = &apos;&apos;,</span><br><span class="line">        $receive_type = &apos;direct&apos;,</span><br><span class="line">        $receive_queue_durable = false,</span><br><span class="line">        $receive_message_durable = false</span><br><span class="line">    ) &#123;</span><br><span class="line">        $this-&gt;connect = new AMQPStreamConnection(</span><br><span class="line">            $this-&gt;config[&apos;host&apos;],</span><br><span class="line">            $this-&gt;config[&apos;port&apos;],</span><br><span class="line">            $this-&gt;config[&apos;login&apos;],</span><br><span class="line">            $this-&gt;config[&apos;password&apos;],</span><br><span class="line">            $this-&gt;config[&apos;vhost&apos;]</span><br><span class="line">        );</span><br><span class="line">        $this-&gt;channel = $this-&gt;connect-&gt;channel();</span><br><span class="line"></span><br><span class="line">        // 声明主队列 &lt;--  关联主消费交换机(接收)  &lt;-- 数据压入</span><br><span class="line">        //  |  300        /</span><br><span class="line">        //  |            /</span><br><span class="line">        //  关联延时交换机    -&gt;   关联消费队列</span><br><span class="line">        //</span><br><span class="line">        //  延时交换机（弹出数据） -&gt; 消费</span><br><span class="line"></span><br><span class="line">        //声明死信规则</span><br><span class="line">        $tale = new AMQPTable();</span><br><span class="line">        $tale-&gt;set(&apos;x-dead-letter-exchange&apos;, $receive_exchange_name);</span><br><span class="line">        $tale-&gt;set(&apos;x-dead-letter-routing-key&apos;, $receive_routing_key);</span><br><span class="line">        $tale-&gt;set(&apos;x-message-ttl&apos;, $delay_expire);</span><br><span class="line"></span><br><span class="line">        //声明延时交换机 与 接收交换机</span><br><span class="line">        $this-&gt;channel-&gt;exchange_declare($delay_exchange_name, $delay_type, false, $delay_message_durable, false, false, false, [], null);</span><br><span class="line">        $this-&gt;channel-&gt;exchange_declare($receive_exchange_name, $receive_type, false, $receive_message_durable, false, false, false, [], null);</span><br><span class="line"></span><br><span class="line">        //声明延时队列 与 接收队列</span><br><span class="line">        $this-&gt;channel-&gt;queue_declare($delay_queue, false, $delay_queue_durable, false, false, false, $tale, null);</span><br><span class="line">        $this-&gt;channel-&gt;queue_declare($receive_queue, false, $receive_queue_durable, false, false, false, [], null);</span><br><span class="line"></span><br><span class="line">        //绑定延时队列到延时交换机 与 绑定接收队列到接收交换机</span><br><span class="line">        $this-&gt;channel-&gt;queue_bind($delay_queue, $delay_exchange_name, $delay_routing_key, false, [], null);</span><br><span class="line">        $this-&gt;channel-&gt;queue_bind($receive_queue, $receive_exchange_name, $receive_routing_key, false, [], null);</span><br><span class="line"></span><br><span class="line">        //处理压入消息格式</span><br><span class="line">        $msg = $this-&gt;message($data, $delay_message_durable);</span><br><span class="line"></span><br><span class="line">        //压入消息到交换机</span><br><span class="line">        $this-&gt;channel-&gt;basic_publish($msg, $delay_exchange_name, $delay_routing_key, false, false, null);</span><br><span class="line"></span><br><span class="line">        //关闭</span><br><span class="line">        $this-&gt;channel-&gt;close(); // 关闭信道</span><br><span class="line">        $this-&gt;connect-&gt;close(); // 关闭链接</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 消费者 只消费一个队列</span><br><span class="line">     *</span><br><span class="line">     * @param string $queue</span><br><span class="line">     * @param string $consumer_tag</span><br><span class="line">     * @param bool   $no_local</span><br><span class="line">     * @param bool   $no_ack</span><br><span class="line">     * @param bool   $exclusive</span><br><span class="line">     * @param bool   $nowait</span><br><span class="line">     * @param null   $ticket</span><br><span class="line">     * @param array  $arguments</span><br><span class="line">     */</span><br><span class="line">    function receive(</span><br><span class="line">        $queue = &apos;&apos;, // 队列名</span><br><span class="line">        $callback = null, // 回调函数</span><br><span class="line">        $queue_durable = false, //持久化</span><br><span class="line">        $consumer_tag = &apos;&apos;,</span><br><span class="line">        $no_local = false,</span><br><span class="line">        $no_ack = false,</span><br><span class="line">        $exclusive = false, //队列是否可以被其他队列访问</span><br><span class="line">        $nowait = false,</span><br><span class="line">        $ticket = null,</span><br><span class="line">        $arguments = array()</span><br><span class="line">    ) &#123;</span><br><span class="line">        $this-&gt;connect = new AMQPStreamConnection(</span><br><span class="line">            $this-&gt;config[&apos;host&apos;],</span><br><span class="line">            $this-&gt;config[&apos;port&apos;],</span><br><span class="line">            $this-&gt;config[&apos;login&apos;],</span><br><span class="line">            $this-&gt;config[&apos;password&apos;],</span><br><span class="line">            $this-&gt;config[&apos;vhost&apos;]</span><br><span class="line">        );</span><br><span class="line">        $this-&gt;channel = $this-&gt;connect-&gt;channel();</span><br><span class="line"></span><br><span class="line">        //一次只消费一个</span><br><span class="line">        $this-&gt;channel-&gt;basic_qos(0,1,false);</span><br><span class="line"></span><br><span class="line">        //声明队列</span><br><span class="line">        $this-&gt;channel-&gt;queue_declare($queue, false, $queue_durable, false, false, false, [], null);</span><br><span class="line"></span><br><span class="line">        //订阅消费 callback仅绑定并不立即执行</span><br><span class="line">        $this-&gt;channel-&gt;basic_consume($queue, $consumer_tag, $no_local, $no_ack, $exclusive, $nowait, $callback,</span><br><span class="line">            $ticket, $arguments);</span><br><span class="line"></span><br><span class="line">        //轮训等待并触发basic_consume绑定的callback</span><br><span class="line">        while (count($this-&gt;channel-&gt;callbacks)) &#123;</span><br><span class="line">            $this-&gt;channel-&gt;wait();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        //关闭</span><br><span class="line">        $this-&gt;channel-&gt;close(); // 关闭信道</span><br><span class="line">        $this-&gt;connect-&gt;close(); // 关闭链接</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">//        $callback = function ($msg) &#123;</span><br><span class="line">//            $rabbit = new \app\admin\command\Rabbitmq();</span><br><span class="line">//            $rabbit-&gt;sendMessage($msg-&gt;body);</span><br><span class="line">////            $recharge = new Recharge();</span><br><span class="line">////            $recharge-&gt;sendMessage($msg-&gt;body);</span><br><span class="line">//            $this-&gt;basicAck($msg-&gt;delivery_info[&apos;delivery_tag&apos;]);</span><br><span class="line">//        &#125;;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>消费队列</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * MQ队列处理方法</span><br><span class="line"> */</span><br><span class="line">protected function executeMQ()&#123;</span><br><span class="line">    try &#123;</span><br><span class="line">        $mq = new Rabbitmq();</span><br><span class="line">        $mq-&gt;receive(self::SYNC_MQ_QUEUE_NAME, function (AMQPMessage $msg)&#123;</span><br><span class="line">            $data = json_decode($msg-&gt;body, true);</span><br><span class="line">            if(isset($data[&apos;channel_id&apos;]) &amp;&amp; !empty($data[&apos;channel_id&apos;]))&#123;</span><br><span class="line">                $channel = $msg-&gt;delivery_info[&apos;channel&apos;];</span><br><span class="line">                if($is_end = $this-&gt;sync($data[&apos;channel_id&apos;]))&#123;</span><br><span class="line">                    //手动ACK回复</span><br><span class="line">                    $channel-&gt;basic_ack($msg-&gt;delivery_info[&apos;delivery_tag&apos;]);</span><br><span class="line">                &#125;else&#123;</span><br><span class="line">                    //拒绝消息,并丢弃</span><br><span class="line">                    $channel-&gt;basic_nack($msg-&gt;delivery_info[&apos;delivery_tag&apos;],false,false);</span><br><span class="line">                    //五秒后重新拉取</span><br><span class="line">                    sleep(5);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125; catch (\Exception $e) &#123;</span><br><span class="line">        Log::error(&quot;MQ 同步用户 触发异常！message:&quot; . $e-&gt;getMessage());</span><br><span class="line">        $this-&gt;consoleOut-&gt;writeln(&quot;MQ 同步用户 触发异常！message:&quot; . $e-&gt;getMessage());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>添加队列</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$mq = new Rabbitmq();</span><br><span class="line"></span><br><span class="line">$delaytime = Config::get(&apos;rabbitmq.pay_cannel_expire&apos;)*1000*3; //15分钟 队列延迟时间/单位毫秒</span><br><span class="line">$delay_q = &apos;Q_NewPayCancelDelay&apos;;</span><br><span class="line">$delay_e = &apos;E_NewPayCancelDelay&apos;;</span><br><span class="line">$receive_q = &apos;Q_NewPayCancelReceive&apos;;</span><br><span class="line">$receive_e = &apos;E_NewPayCancelReceive&apos;;</span><br><span class="line">//延时队列</span><br><span class="line">$mq-&gt;sendDelay($data, $delay_q, $delay_e, &apos;&apos;, &apos;direct&apos;, $delaytime, false, false,$receive_q, $receive_e, &apos;&apos;, &apos;direct&apos;, false, false);</span><br><span class="line">//及时队列</span><br><span class="line">$mq-&gt;send([&apos;channel_id&apos;=&gt;$channel_id,&apos;appid&apos;=&gt;$appid],self::SYNC_MQ_QUEUE_NAME,self::SYNC_MQ_EXCHANGE_NAME);</span><br></pre></td></tr></table></figure>
+
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p><a href="https://segmentfault.com/a/1190000014847788" target="_blank" rel="noopener">RabbitMQ发布订阅实战-实现延时重试队列</a></p>
+<p><a href="https://www.jianshu.com/p/469f4608ce5d" target="_blank" rel="noopener">RabbitMQ的四种交换机</a></p>
+<p><a href="https://www.cnblogs.com/cwp-bg/p/8426188.html" target="_blank" rel="noopener">rabbitmq之python_pika模块连接MQ使用</a></p>
+<p><a href="https://www.zouyesheng.com/rabbitmq.html" target="_blank" rel="noopener">RabbitMQ 使用参考</a></p>
+
+      
+    </div>
+    
+    
+    
+    <div>
+        
+            <div>
+
+    <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+
+</div>
+
+        
+    </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享,您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="o时过境迁心难沉 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="o时过境迁心难沉 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/PHP/" rel="tag"><i class="fa fa-tag"></i> PHP</a>
+          
+            <a href="/tags/other/" rel="tag"><i class="fa fa-tag"></i> 其他</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/article/1915129581.html" rel="next" title="Git多个账户秘钥管理">
+                <i class="fa fa-chevron-left"></i> Git多个账户秘钥管理
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/article/e774f456.html" rel="prev" title="ITerm2快捷登录">
+                ITerm2快捷登录 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="https://himg.bdimg.com/sys/portrait/item/21cd636875616e7368756f3834339e11.jpg" alt="o时过境迁心难沉">
+            
+              <p class="site-author-name" itemprop="name">o时过境迁心难沉</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">69</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/chuanshuo843" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:backtrack843@163.com" target="_blank" title="E-Mail">
+                    
+                      <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#交换机"><span class="nav-number">1.</span> <span class="nav-text">交换机</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#直连交换机"><span class="nav-number">1.1.</span> <span class="nav-text">直连交换机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#扇形交换机"><span class="nav-number">1.2.</span> <span class="nav-text">扇形交换机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题交换机"><span class="nav-number">1.3.</span> <span class="nav-text">主题交换机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#首部交换机"><span class="nav-number">1.4.</span> <span class="nav-text">首部交换机</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#虚拟主机-交换机-队列-绑定"><span class="nav-number">2.</span> <span class="nav-text">虚拟主机,交换机,队列,绑定</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#消息确认与持久化"><span class="nav-number">3.</span> <span class="nav-text">消息确认与持久化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实例代码"><span class="nav-number">4.</span> <span class="nav-text">实例代码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">5.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">o时过境迁心难沉</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.3</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> 访问人数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> 访问总量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+      
+        var gitment = new Gitmint({
+            id: '1535523060000', 
+            owner: 'chuanshuo843',
+            repo: 'chuanshuo843.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '308af1bc795e3ad541abb1434f8bfd0ce7a42406',
+            
+                client_id: '9a59cf665f640634ef90'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
