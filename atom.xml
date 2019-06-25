@@ -235,9 +235,9 @@
       <category term="运维" scheme="https://www.ganktools.com/categories/operation/"/>
     
     
-      <category term="Docker" scheme="https://www.ganktools.com/tags/Docker/"/>
-    
       <category term="Linux" scheme="https://www.ganktools.com/tags/Linux/"/>
+    
+      <category term="Docker" scheme="https://www.ganktools.com/tags/Docker/"/>
     
   </entry>
   
