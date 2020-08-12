@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>o时过境迁心难沉</title>
+  <title>是潘达呀</title>
   
   <subtitle>记录看到和遇到的问题和解决方式</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://www.ganktools.com/"/>
+  <link href="https://panda843.github.io/"/>
   <updated>2019-06-19T07:05:59.648Z</updated>
-  <id>https://www.ganktools.com/</id>
+  <id>https://panda843.github.io/</id>
   
   <author>
-    <name>o时过境迁心难沉</name>
+    <name>是潘达呀</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>微信动物餐厅游戏辅助</title>
-    <link href="https://www.ganktools.com/article/ecb6ef2b.html"/>
-    <id>https://www.ganktools.com/article/ecb6ef2b.html</id>
+    <link href="https://panda843.github.io/article/ecb6ef2b.html"/>
+    <id>https://panda843.github.io/article/ecb6ef2b.html</id>
     <published>2019-06-17T03:40:00.000Z</published>
     <updated>2019-06-19T07:05:59.648Z</updated>
     
@@ -32,17 +32,17 @@
     
     </summary>
     
-      <category term="其他" scheme="https://www.ganktools.com/categories/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/categories/other/"/>
     
     
-      <category term="其他" scheme="https://www.ganktools.com/tags/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/tags/other/"/>
     
   </entry>
   
   <entry>
     <title>Mysql之limit分页数据重复问题</title>
-    <link href="https://www.ganktools.com/article/ec473fdc.html"/>
-    <id>https://www.ganktools.com/article/ec473fdc.html</id>
+    <link href="https://panda843.github.io/article/ec473fdc.html"/>
+    <id>https://panda843.github.io/article/ec473fdc.html</id>
     <published>2018-10-22T07:38:00.000Z</published>
     <updated>2019-06-19T07:05:59.613Z</updated>
     
@@ -54,17 +54,17 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="MySQL" scheme="https://www.ganktools.com/tags/MySQL/"/>
+      <category term="MySQL" scheme="https://panda843.github.io/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>ITerm2快捷登录</title>
-    <link href="https://www.ganktools.com/article/e774f456.html"/>
-    <id>https://www.ganktools.com/article/e774f456.html</id>
+    <link href="https://panda843.github.io/article/e774f456.html"/>
+    <id>https://panda843.github.io/article/e774f456.html</id>
     <published>2018-09-19T07:37:00.000Z</published>
     <updated>2019-06-19T07:05:59.606Z</updated>
     
@@ -76,17 +76,17 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="Linux" scheme="https://www.ganktools.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://panda843.github.io/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>RabbitMQ概述</title>
-    <link href="https://www.ganktools.com/article/c80a4ce4.html"/>
-    <id>https://www.ganktools.com/article/c80a4ce4.html</id>
+    <link href="https://panda843.github.io/article/c80a4ce4.html"/>
+    <id>https://panda843.github.io/article/c80a4ce4.html</id>
     <published>2018-08-29T06:11:00.000Z</published>
     <updated>2019-06-19T07:05:59.636Z</updated>
     
@@ -98,19 +98,19 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
-      <category term="其他" scheme="https://www.ganktools.com/tags/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/tags/other/"/>
     
   </entry>
   
   <entry>
     <title>Git多个账户秘钥管理</title>
-    <link href="https://www.ganktools.com/article/1915129581.html"/>
-    <id>https://www.ganktools.com/article/1915129581.html</id>
+    <link href="https://panda843.github.io/article/1915129581.html"/>
+    <id>https://panda843.github.io/article/1915129581.html</id>
     <published>2018-07-26T07:51:00.000Z</published>
     <updated>2019-06-19T07:05:59.602Z</updated>
     
@@ -122,17 +122,17 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="Git" scheme="https://www.ganktools.com/tags/Git/"/>
+      <category term="Git" scheme="https://panda843.github.io/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>Golang之JWT的实现</title>
-    <link href="https://www.ganktools.com/article/201619652.html"/>
-    <id>https://www.ganktools.com/article/201619652.html</id>
+    <link href="https://panda843.github.io/article/201619652.html"/>
+    <id>https://panda843.github.io/article/201619652.html</id>
     <published>2018-01-15T02:17:00.000Z</published>
     <updated>2019-06-19T07:05:59.602Z</updated>
     
@@ -144,17 +144,17 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="RFC标准系列" scheme="https://www.ganktools.com/tags/rfc/"/>
+      <category term="RFC标准系列" scheme="https://panda843.github.io/tags/rfc/"/>
     
   </entry>
   
   <entry>
     <title>博客迁移到GitHub.io</title>
-    <link href="https://www.ganktools.com/article/2960315663.html"/>
-    <id>https://www.ganktools.com/article/2960315663.html</id>
+    <link href="https://panda843.github.io/article/2960315663.html"/>
+    <id>https://panda843.github.io/article/2960315663.html</id>
     <published>2017-12-29T02:28:00.000Z</published>
     <updated>2019-06-19T07:05:59.641Z</updated>
     
@@ -166,17 +166,17 @@
     
     </summary>
     
-      <category term="运维" scheme="https://www.ganktools.com/categories/operation/"/>
+      <category term="运维" scheme="https://panda843.github.io/categories/operation/"/>
     
     
-      <category term="其他" scheme="https://www.ganktools.com/tags/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/tags/other/"/>
     
   </entry>
   
   <entry>
     <title>ThinkPHP-Nginx-配置</title>
-    <link href="https://www.ganktools.com/article/2666822391.html"/>
-    <id>https://www.ganktools.com/article/2666822391.html</id>
+    <link href="https://panda843.github.io/article/2666822391.html"/>
+    <id>https://panda843.github.io/article/2666822391.html</id>
     <published>2017-12-28T12:58:00.000Z</published>
     <updated>2019-06-19T07:05:59.640Z</updated>
     
@@ -188,17 +188,17 @@
     
     </summary>
     
-      <category term="运维" scheme="https://www.ganktools.com/categories/operation/"/>
+      <category term="运维" scheme="https://panda843.github.io/categories/operation/"/>
     
     
-      <category term="Linux" scheme="https://www.ganktools.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://panda843.github.io/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>nginx-lua-redis-反向代理</title>
-    <link href="https://www.ganktools.com/article/2989278071.html"/>
-    <id>https://www.ganktools.com/article/2989278071.html</id>
+    <link href="https://panda843.github.io/article/2989278071.html"/>
+    <id>https://panda843.github.io/article/2989278071.html</id>
     <published>2017-12-28T12:56:00.000Z</published>
     <updated>2019-06-19T07:05:59.641Z</updated>
     
@@ -210,17 +210,17 @@
     
     </summary>
     
-      <category term="运维" scheme="https://www.ganktools.com/categories/operation/"/>
+      <category term="运维" scheme="https://panda843.github.io/categories/operation/"/>
     
     
-      <category term="Linux" scheme="https://www.ganktools.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://panda843.github.io/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>Kubernetes集群部署方案</title>
-    <link href="https://www.ganktools.com/article/4261225024.html"/>
-    <id>https://www.ganktools.com/article/4261225024.html</id>
+    <link href="https://panda843.github.io/article/4261225024.html"/>
+    <id>https://panda843.github.io/article/4261225024.html</id>
     <published>2017-12-28T12:44:00.000Z</published>
     <updated>2019-06-19T07:05:59.607Z</updated>
     
@@ -232,19 +232,19 @@
     
     </summary>
     
-      <category term="运维" scheme="https://www.ganktools.com/categories/operation/"/>
+      <category term="运维" scheme="https://panda843.github.io/categories/operation/"/>
     
     
-      <category term="Linux" scheme="https://www.ganktools.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://panda843.github.io/tags/Linux/"/>
     
-      <category term="Docker" scheme="https://www.ganktools.com/tags/Docker/"/>
+      <category term="Docker" scheme="https://panda843.github.io/tags/Docker/"/>
     
   </entry>
   
   <entry>
     <title>位运算实现用户留存率</title>
-    <link href="https://www.ganktools.com/article/3167685568.html"/>
-    <id>https://www.ganktools.com/article/3167685568.html</id>
+    <link href="https://panda843.github.io/article/3167685568.html"/>
+    <id>https://panda843.github.io/article/3167685568.html</id>
     <published>2017-12-28T12:37:00.000Z</published>
     <updated>2019-06-19T07:05:59.641Z</updated>
     
@@ -256,17 +256,17 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
   </entry>
   
   <entry>
     <title>PHP之堆-Heap</title>
-    <link href="https://www.ganktools.com/article/1832317452.html"/>
-    <id>https://www.ganktools.com/article/1832317452.html</id>
+    <link href="https://panda843.github.io/article/1832317452.html"/>
+    <id>https://panda843.github.io/article/1832317452.html</id>
     <published>2017-12-28T12:27:00.000Z</published>
     <updated>2019-06-19T07:05:59.621Z</updated>
     
@@ -279,19 +279,19 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
-      <category term="SPL标准库" scheme="https://www.ganktools.com/tags/spl/"/>
+      <category term="SPL标准库" scheme="https://panda843.github.io/tags/spl/"/>
     
   </entry>
   
   <entry>
     <title>PHP之队列-Queue</title>
-    <link href="https://www.ganktools.com/article/1490765381.html"/>
-    <id>https://www.ganktools.com/article/1490765381.html</id>
+    <link href="https://panda843.github.io/article/1490765381.html"/>
+    <id>https://panda843.github.io/article/1490765381.html</id>
     <published>2017-12-28T12:19:00.000Z</published>
     <updated>2019-06-19T07:05:59.634Z</updated>
     
@@ -303,19 +303,19 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
-      <category term="SPL标准库" scheme="https://www.ganktools.com/tags/spl/"/>
+      <category term="SPL标准库" scheme="https://panda843.github.io/tags/spl/"/>
     
   </entry>
   
   <entry>
     <title>PHP之栈-Stack</title>
-    <link href="https://www.ganktools.com/article/4134649319.html"/>
-    <id>https://www.ganktools.com/article/4134649319.html</id>
+    <link href="https://panda843.github.io/article/4134649319.html"/>
+    <id>https://panda843.github.io/article/4134649319.html</id>
     <published>2017-12-28T12:06:00.000Z</published>
     <updated>2019-06-19T07:05:59.630Z</updated>
     
@@ -327,19 +327,19 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
-      <category term="SPL标准库" scheme="https://www.ganktools.com/tags/spl/"/>
+      <category term="SPL标准库" scheme="https://panda843.github.io/tags/spl/"/>
     
   </entry>
   
   <entry>
     <title>PHP之双向链表</title>
-    <link href="https://www.ganktools.com/article/2340898584.html"/>
-    <id>https://www.ganktools.com/article/2340898584.html</id>
+    <link href="https://panda843.github.io/article/2340898584.html"/>
+    <id>https://panda843.github.io/article/2340898584.html</id>
     <published>2017-12-28T11:58:00.000Z</published>
     <updated>2019-06-19T07:05:59.621Z</updated>
     
@@ -351,19 +351,19 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
-      <category term="SPL标准库" scheme="https://www.ganktools.com/tags/spl/"/>
+      <category term="SPL标准库" scheme="https://panda843.github.io/tags/spl/"/>
     
   </entry>
   
   <entry>
     <title>EXT2文件系统结构</title>
-    <link href="https://www.ganktools.com/article/1220878275.html"/>
-    <id>https://www.ganktools.com/article/1220878275.html</id>
+    <link href="https://panda843.github.io/article/1220878275.html"/>
+    <id>https://panda843.github.io/article/1220878275.html</id>
     <published>2017-12-28T11:38:00.000Z</published>
     <updated>2019-06-19T07:05:59.559Z</updated>
     
@@ -375,17 +375,17 @@
     
     </summary>
     
-      <category term="其他" scheme="https://www.ganktools.com/categories/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/categories/other/"/>
     
     
-      <category term="Linux" scheme="https://www.ganktools.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://panda843.github.io/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>基于Docker和Jenkins的CI改造</title>
-    <link href="https://www.ganktools.com/article/4226450635.html"/>
-    <id>https://www.ganktools.com/article/4226450635.html</id>
+    <link href="https://panda843.github.io/article/4226450635.html"/>
+    <id>https://panda843.github.io/article/4226450635.html</id>
     <published>2017-12-28T11:22:00.000Z</published>
     <updated>2019-06-19T07:05:59.643Z</updated>
     
@@ -397,17 +397,17 @@
     
     </summary>
     
-      <category term="运维" scheme="https://www.ganktools.com/categories/operation/"/>
+      <category term="运维" scheme="https://panda843.github.io/categories/operation/"/>
     
     
-      <category term="Linux" scheme="https://www.ganktools.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://panda843.github.io/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>Fedora24使用笔记</title>
-    <link href="https://www.ganktools.com/article/1837062590.html"/>
-    <id>https://www.ganktools.com/article/1837062590.html</id>
+    <link href="https://panda843.github.io/article/1837062590.html"/>
+    <id>https://panda843.github.io/article/1837062590.html</id>
     <published>2017-12-28T09:05:00.000Z</published>
     <updated>2019-06-19T07:05:59.561Z</updated>
     
@@ -419,17 +419,17 @@
     
     </summary>
     
-      <category term="运维" scheme="https://www.ganktools.com/categories/operation/"/>
+      <category term="运维" scheme="https://panda843.github.io/categories/operation/"/>
     
     
-      <category term="Linux" scheme="https://www.ganktools.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://panda843.github.io/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>Linux终端美化之ZSH</title>
-    <link href="https://www.ganktools.com/article/3194097614.html"/>
-    <id>https://www.ganktools.com/article/3194097614.html</id>
+    <link href="https://panda843.github.io/article/3194097614.html"/>
+    <id>https://panda843.github.io/article/3194097614.html</id>
     <published>2017-12-28T08:58:00.000Z</published>
     <updated>2019-06-19T07:05:59.608Z</updated>
     
@@ -441,19 +441,19 @@
     
     </summary>
     
-      <category term="其他" scheme="https://www.ganktools.com/categories/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/categories/other/"/>
     
     
-      <category term="Linux" scheme="https://www.ganktools.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://panda843.github.io/tags/Linux/"/>
     
-      <category term="其他" scheme="https://www.ganktools.com/tags/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/tags/other/"/>
     
   </entry>
   
   <entry>
     <title>Shadowsocks之科学上网</title>
-    <link href="https://www.ganktools.com/article/1570730903.html"/>
-    <id>https://www.ganktools.com/article/1570730903.html</id>
+    <link href="https://panda843.github.io/article/1570730903.html"/>
+    <id>https://panda843.github.io/article/1570730903.html</id>
     <published>2017-12-28T08:46:00.000Z</published>
     <updated>2019-06-19T07:05:59.637Z</updated>
     
@@ -465,17 +465,17 @@
     
     </summary>
     
-      <category term="其他" scheme="https://www.ganktools.com/categories/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/categories/other/"/>
     
     
-      <category term="其他" scheme="https://www.ganktools.com/tags/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/tags/other/"/>
     
   </entry>
   
   <entry>
     <title>进程与线程的区别概述</title>
-    <link href="https://www.ganktools.com/article/956853022.html"/>
-    <id>https://www.ganktools.com/article/956853022.html</id>
+    <link href="https://panda843.github.io/article/956853022.html"/>
+    <id>https://panda843.github.io/article/956853022.html</id>
     <published>2017-12-28T08:43:42.000Z</published>
     <updated>2019-06-19T07:05:59.650Z</updated>
     
@@ -492,8 +492,8 @@
   
   <entry>
     <title>GoogleChrome扩展开发</title>
-    <link href="https://www.ganktools.com/article/2557955107.html"/>
-    <id>https://www.ganktools.com/article/2557955107.html</id>
+    <link href="https://panda843.github.io/article/2557955107.html"/>
+    <id>https://panda843.github.io/article/2557955107.html</id>
     <published>2017-12-28T08:32:00.000Z</published>
     <updated>2019-06-19T07:05:59.602Z</updated>
     
@@ -505,17 +505,17 @@
     
     </summary>
     
-      <category term="其他" scheme="https://www.ganktools.com/categories/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/categories/other/"/>
     
     
-      <category term="其他" scheme="https://www.ganktools.com/tags/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/tags/other/"/>
     
   </entry>
   
   <entry>
     <title>开源协议说明</title>
-    <link href="https://www.ganktools.com/article/2517736651.html"/>
-    <id>https://www.ganktools.com/article/2517736651.html</id>
+    <link href="https://panda843.github.io/article/2517736651.html"/>
+    <id>https://panda843.github.io/article/2517736651.html</id>
     <published>2017-12-28T08:30:00.000Z</published>
     <updated>2019-06-19T07:05:59.648Z</updated>
     
@@ -527,17 +527,17 @@
     
     </summary>
     
-      <category term="其他" scheme="https://www.ganktools.com/categories/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/categories/other/"/>
     
     
-      <category term="其他" scheme="https://www.ganktools.com/tags/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/tags/other/"/>
     
   </entry>
   
   <entry>
     <title>我的SublimeText3配置</title>
-    <link href="https://www.ganktools.com/article/4192108374.html"/>
-    <id>https://www.ganktools.com/article/4192108374.html</id>
+    <link href="https://panda843.github.io/article/4192108374.html"/>
+    <id>https://panda843.github.io/article/4192108374.html</id>
     <published>2017-12-28T08:25:00.000Z</published>
     <updated>2019-06-19T07:05:59.649Z</updated>
     
@@ -549,17 +549,17 @@
     
     </summary>
     
-      <category term="其他" scheme="https://www.ganktools.com/categories/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/categories/other/"/>
     
     
-      <category term="其他" scheme="https://www.ganktools.com/tags/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/tags/other/"/>
     
   </entry>
   
   <entry>
     <title>如何实现一个高效的Mysql分页</title>
-    <link href="https://www.ganktools.com/article/2467272890.html"/>
-    <id>https://www.ganktools.com/article/2467272890.html</id>
+    <link href="https://panda843.github.io/article/2467272890.html"/>
+    <id>https://panda843.github.io/article/2467272890.html</id>
     <published>2017-12-28T08:20:00.000Z</published>
     <updated>2019-06-19T07:05:59.647Z</updated>
     
@@ -571,17 +571,17 @@
     
     </summary>
     
-      <category term="数据库" scheme="https://www.ganktools.com/categories/sql/"/>
+      <category term="数据库" scheme="https://panda843.github.io/categories/sql/"/>
     
     
-      <category term="MySQL" scheme="https://www.ganktools.com/tags/MySQL/"/>
+      <category term="MySQL" scheme="https://panda843.github.io/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>Nginx+Lua实现访问日志收集系统</title>
-    <link href="https://www.ganktools.com/article/1758295789.html"/>
-    <id>https://www.ganktools.com/article/1758295789.html</id>
+    <link href="https://panda843.github.io/article/1758295789.html"/>
+    <id>https://panda843.github.io/article/1758295789.html</id>
     <published>2017-12-28T08:14:00.000Z</published>
     <updated>2019-06-19T07:05:59.614Z</updated>
     
@@ -593,19 +593,19 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="Linux" scheme="https://www.ganktools.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://panda843.github.io/tags/Linux/"/>
     
-      <category term="其他" scheme="https://www.ganktools.com/tags/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/tags/other/"/>
     
   </entry>
   
   <entry>
     <title>PHP之插入排序的实现</title>
-    <link href="https://www.ganktools.com/article/1225165845.html"/>
-    <id>https://www.ganktools.com/article/1225165845.html</id>
+    <link href="https://panda843.github.io/article/1225165845.html"/>
+    <id>https://panda843.github.io/article/1225165845.html</id>
     <published>2017-12-28T08:10:00.000Z</published>
     <updated>2019-06-19T07:05:59.622Z</updated>
     
@@ -617,19 +617,19 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
-      <category term="算法实现" scheme="https://www.ganktools.com/tags/algorithm/"/>
+      <category term="算法实现" scheme="https://panda843.github.io/tags/algorithm/"/>
     
   </entry>
   
   <entry>
     <title>PHP之RBAC权限开发</title>
-    <link href="https://www.ganktools.com/article/400587758.html"/>
-    <id>https://www.ganktools.com/article/400587758.html</id>
+    <link href="https://panda843.github.io/article/400587758.html"/>
+    <id>https://panda843.github.io/article/400587758.html</id>
     <published>2017-12-28T08:07:00.000Z</published>
     <updated>2019-06-19T07:05:59.615Z</updated>
     
@@ -641,17 +641,17 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
   </entry>
   
   <entry>
     <title>PHP之快速排序的实现</title>
-    <link href="https://www.ganktools.com/article/3462090578.html"/>
-    <id>https://www.ganktools.com/article/3462090578.html</id>
+    <link href="https://panda843.github.io/article/3462090578.html"/>
+    <id>https://panda843.github.io/article/3462090578.html</id>
     <published>2017-12-28T08:03:00.000Z</published>
     <updated>2019-06-19T07:05:59.621Z</updated>
     
@@ -663,19 +663,19 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
-      <category term="算法实现" scheme="https://www.ganktools.com/tags/algorithm/"/>
+      <category term="算法实现" scheme="https://panda843.github.io/tags/algorithm/"/>
     
   </entry>
   
   <entry>
     <title>PHP之冒泡排序的实现</title>
-    <link href="https://www.ganktools.com/article/1792372328.html"/>
-    <id>https://www.ganktools.com/article/1792372328.html</id>
+    <link href="https://panda843.github.io/article/1792372328.html"/>
+    <id>https://panda843.github.io/article/1792372328.html</id>
     <published>2017-12-28T07:58:00.000Z</published>
     <updated>2019-06-19T07:05:59.617Z</updated>
     
@@ -687,19 +687,19 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
-      <category term="算法实现" scheme="https://www.ganktools.com/tags/algorithm/"/>
+      <category term="算法实现" scheme="https://panda843.github.io/tags/algorithm/"/>
     
   </entry>
   
   <entry>
     <title>PHP之选择排序的实现</title>
-    <link href="https://www.ganktools.com/article/3434685696.html"/>
-    <id>https://www.ganktools.com/article/3434685696.html</id>
+    <link href="https://panda843.github.io/article/3434685696.html"/>
+    <id>https://panda843.github.io/article/3434685696.html</id>
     <published>2017-12-28T07:53:00.000Z</published>
     <updated>2019-06-19T07:05:59.630Z</updated>
     
@@ -711,19 +711,19 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
-      <category term="算法实现" scheme="https://www.ganktools.com/tags/algorithm/"/>
+      <category term="算法实现" scheme="https://panda843.github.io/tags/algorithm/"/>
     
   </entry>
   
   <entry>
     <title>PHP之二分查找的实现</title>
-    <link href="https://www.ganktools.com/article/395626462.html"/>
-    <id>https://www.ganktools.com/article/395626462.html</id>
+    <link href="https://panda843.github.io/article/395626462.html"/>
+    <id>https://panda843.github.io/article/395626462.html</id>
     <published>2017-12-28T07:48:00.000Z</published>
     <updated>2019-06-19T07:05:59.617Z</updated>
     
@@ -735,19 +735,19 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
-      <category term="算法实现" scheme="https://www.ganktools.com/tags/algorithm/"/>
+      <category term="算法实现" scheme="https://panda843.github.io/tags/algorithm/"/>
     
   </entry>
   
   <entry>
     <title>SSO之CAS原理和协议说明</title>
-    <link href="https://www.ganktools.com/article/2389204915.html"/>
-    <id>https://www.ganktools.com/article/2389204915.html</id>
+    <link href="https://panda843.github.io/article/2389204915.html"/>
+    <id>https://panda843.github.io/article/2389204915.html</id>
     <published>2017-12-28T06:47:00.000Z</published>
     <updated>2019-06-19T07:05:59.636Z</updated>
     
@@ -759,17 +759,17 @@
     
     </summary>
     
-      <category term="其他" scheme="https://www.ganktools.com/categories/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/categories/other/"/>
     
     
-      <category term="其他" scheme="https://www.ganktools.com/tags/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/tags/other/"/>
     
   </entry>
   
   <entry>
     <title>Supervisor的使用和配置</title>
-    <link href="https://www.ganktools.com/article/2050126218.html"/>
-    <id>https://www.ganktools.com/article/2050126218.html</id>
+    <link href="https://panda843.github.io/article/2050126218.html"/>
+    <id>https://panda843.github.io/article/2050126218.html</id>
     <published>2017-12-27T13:56:00.000Z</published>
     <updated>2019-06-19T07:05:59.640Z</updated>
     
@@ -781,17 +781,17 @@
     
     </summary>
     
-      <category term="运维" scheme="https://www.ganktools.com/categories/operation/"/>
+      <category term="运维" scheme="https://panda843.github.io/categories/operation/"/>
     
     
-      <category term="Linux" scheme="https://www.ganktools.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://panda843.github.io/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>Git配置和常用命令</title>
-    <link href="https://www.ganktools.com/article/3737903822.html"/>
-    <id>https://www.ganktools.com/article/3737903822.html</id>
+    <link href="https://panda843.github.io/article/3737903822.html"/>
+    <id>https://panda843.github.io/article/3737903822.html</id>
     <published>2017-12-27T13:50:00.000Z</published>
     <updated>2019-06-19T07:05:59.602Z</updated>
     
@@ -803,19 +803,19 @@
     
     </summary>
     
-      <category term="其他" scheme="https://www.ganktools.com/categories/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/categories/other/"/>
     
     
-      <category term="Git" scheme="https://www.ganktools.com/tags/Git/"/>
+      <category term="Git" scheme="https://panda843.github.io/tags/Git/"/>
     
-      <category term="其他" scheme="https://www.ganktools.com/tags/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/tags/other/"/>
     
   </entry>
   
   <entry>
     <title>Linux查看CPU信息</title>
-    <link href="https://www.ganktools.com/article/474643588.html"/>
-    <id>https://www.ganktools.com/article/474643588.html</id>
+    <link href="https://panda843.github.io/article/474643588.html"/>
+    <id>https://panda843.github.io/article/474643588.html</id>
     <published>2017-12-27T13:48:00.000Z</published>
     <updated>2019-06-19T07:05:59.608Z</updated>
     
@@ -827,17 +827,17 @@
     
     </summary>
     
-      <category term="运维" scheme="https://www.ganktools.com/categories/operation/"/>
+      <category term="运维" scheme="https://panda843.github.io/categories/operation/"/>
     
     
-      <category term="Linux" scheme="https://www.ganktools.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://panda843.github.io/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>Dockerfile文件说明</title>
-    <link href="https://www.ganktools.com/article/2974468587.html"/>
-    <id>https://www.ganktools.com/article/2974468587.html</id>
+    <link href="https://panda843.github.io/article/2974468587.html"/>
+    <id>https://panda843.github.io/article/2974468587.html</id>
     <published>2017-12-27T13:44:00.000Z</published>
     <updated>2019-06-19T07:05:59.559Z</updated>
     
@@ -849,17 +849,17 @@
     
     </summary>
     
-      <category term="其他" scheme="https://www.ganktools.com/categories/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/categories/other/"/>
     
     
-      <category term="Docker" scheme="https://www.ganktools.com/tags/Docker/"/>
+      <category term="Docker" scheme="https://panda843.github.io/tags/Docker/"/>
     
   </entry>
   
   <entry>
     <title>Linux安装ODBC_MYSQL连接</title>
-    <link href="https://www.ganktools.com/article/1999156721.html"/>
-    <id>https://www.ganktools.com/article/1999156721.html</id>
+    <link href="https://panda843.github.io/article/1999156721.html"/>
+    <id>https://panda843.github.io/article/1999156721.html</id>
     <published>2017-12-27T13:41:00.000Z</published>
     <updated>2019-06-19T07:05:59.608Z</updated>
     
@@ -871,19 +871,19 @@
     
     </summary>
     
-      <category term="运维" scheme="https://www.ganktools.com/categories/operation/"/>
+      <category term="运维" scheme="https://panda843.github.io/categories/operation/"/>
     
     
-      <category term="Linux" scheme="https://www.ganktools.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://panda843.github.io/tags/Linux/"/>
     
-      <category term="MySQL" scheme="https://www.ganktools.com/tags/MySQL/"/>
+      <category term="MySQL" scheme="https://panda843.github.io/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>Nginx SSL-https配置</title>
-    <link href="https://www.ganktools.com/article/1090748342.html"/>
-    <id>https://www.ganktools.com/article/1090748342.html</id>
+    <link href="https://panda843.github.io/article/1090748342.html"/>
+    <id>https://panda843.github.io/article/1090748342.html</id>
     <published>2017-12-27T13:37:00.000Z</published>
     <updated>2019-06-19T07:05:59.615Z</updated>
     
@@ -895,17 +895,17 @@
     
     </summary>
     
-      <category term="运维" scheme="https://www.ganktools.com/categories/operation/"/>
+      <category term="运维" scheme="https://panda843.github.io/categories/operation/"/>
     
     
-      <category term="Linux" scheme="https://www.ganktools.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://panda843.github.io/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>Linux 信号说明</title>
-    <link href="https://www.ganktools.com/article/3489224698.html"/>
-    <id>https://www.ganktools.com/article/3489224698.html</id>
+    <link href="https://panda843.github.io/article/3489224698.html"/>
+    <id>https://panda843.github.io/article/3489224698.html</id>
     <published>2017-12-27T13:32:00.000Z</published>
     <updated>2019-06-19T07:05:59.607Z</updated>
     
@@ -917,19 +917,19 @@
     
     </summary>
     
-      <category term="其他" scheme="https://www.ganktools.com/categories/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/categories/other/"/>
     
     
-      <category term="Linux" scheme="https://www.ganktools.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://panda843.github.io/tags/Linux/"/>
     
-      <category term="其他" scheme="https://www.ganktools.com/tags/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/tags/other/"/>
     
   </entry>
   
   <entry>
     <title>Linux网络设置</title>
-    <link href="https://www.ganktools.com/article/3139455287.html"/>
-    <id>https://www.ganktools.com/article/3139455287.html</id>
+    <link href="https://panda843.github.io/article/3139455287.html"/>
+    <id>https://panda843.github.io/article/3139455287.html</id>
     <published>2017-12-27T13:29:00.000Z</published>
     <updated>2019-06-19T07:05:59.612Z</updated>
     
@@ -941,19 +941,19 @@
     
     </summary>
     
-      <category term="运维" scheme="https://www.ganktools.com/categories/operation/"/>
+      <category term="运维" scheme="https://panda843.github.io/categories/operation/"/>
     
     
-      <category term="Linux" scheme="https://www.ganktools.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://panda843.github.io/tags/Linux/"/>
     
-      <category term="其他" scheme="https://www.ganktools.com/tags/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/tags/other/"/>
     
   </entry>
   
   <entry>
     <title>Metasploit安装</title>
-    <link href="https://www.ganktools.com/article/237147173.html"/>
-    <id>https://www.ganktools.com/article/237147173.html</id>
+    <link href="https://panda843.github.io/article/237147173.html"/>
+    <id>https://panda843.github.io/article/237147173.html</id>
     <published>2017-12-27T13:25:00.000Z</published>
     <updated>2019-06-19T07:05:59.612Z</updated>
     
@@ -965,19 +965,19 @@
     
     </summary>
     
-      <category term="其他" scheme="https://www.ganktools.com/categories/other/"/>
+      <category term="其他" scheme="https://panda843.github.io/categories/other/"/>
     
     
-      <category term="Linux" scheme="https://www.ganktools.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://panda843.github.io/tags/Linux/"/>
     
-      <category term="Metasploit" scheme="https://www.ganktools.com/tags/Metasploit/"/>
+      <category term="Metasploit" scheme="https://panda843.github.io/tags/Metasploit/"/>
     
   </entry>
   
   <entry>
     <title>MySql避免重复插入记录方法</title>
-    <link href="https://www.ganktools.com/article/58818159.html"/>
-    <id>https://www.ganktools.com/article/58818159.html</id>
+    <link href="https://panda843.github.io/article/58818159.html"/>
+    <id>https://panda843.github.io/article/58818159.html</id>
     <published>2017-12-27T13:20:00.000Z</published>
     <updated>2019-06-19T07:05:59.613Z</updated>
     
@@ -990,17 +990,17 @@
     
     </summary>
     
-      <category term="数据库" scheme="https://www.ganktools.com/categories/sql/"/>
+      <category term="数据库" scheme="https://panda843.github.io/categories/sql/"/>
     
     
-      <category term="MySQL" scheme="https://www.ganktools.com/tags/MySQL/"/>
+      <category term="MySQL" scheme="https://panda843.github.io/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>设置mysql重启后, Events自启动</title>
-    <link href="https://www.ganktools.com/article/2934597634.html"/>
-    <id>https://www.ganktools.com/article/2934597634.html</id>
+    <link href="https://panda843.github.io/article/2934597634.html"/>
+    <id>https://panda843.github.io/article/2934597634.html</id>
     <published>2017-12-27T13:16:00.000Z</published>
     <updated>2019-06-19T07:05:59.650Z</updated>
     
@@ -1012,17 +1012,17 @@
     
     </summary>
     
-      <category term="数据库" scheme="https://www.ganktools.com/categories/sql/"/>
+      <category term="数据库" scheme="https://panda843.github.io/categories/sql/"/>
     
     
-      <category term="MySQL" scheme="https://www.ganktools.com/tags/MySQL/"/>
+      <category term="MySQL" scheme="https://panda843.github.io/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>Mysql的主从配置实现</title>
-    <link href="https://www.ganktools.com/article/3259372363.html"/>
-    <id>https://www.ganktools.com/article/3259372363.html</id>
+    <link href="https://panda843.github.io/article/3259372363.html"/>
+    <id>https://panda843.github.io/article/3259372363.html</id>
     <published>2017-12-27T13:11:00.000Z</published>
     <updated>2019-06-19T07:05:59.614Z</updated>
     
@@ -1035,21 +1035,21 @@
     
     </summary>
     
-      <category term="数据库" scheme="https://www.ganktools.com/categories/sql/"/>
+      <category term="数据库" scheme="https://panda843.github.io/categories/sql/"/>
     
     
-      <category term="MySQL" scheme="https://www.ganktools.com/tags/MySQL/"/>
+      <category term="MySQL" scheme="https://panda843.github.io/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>Mysql索引的使用</title>
-    <link href="https://www.ganktools.com/article/3739381465.html"/>
-    <id>https://www.ganktools.com/article/3739381465.html</id>
+    <link href="https://panda843.github.io/article/3739381465.html"/>
+    <id>https://panda843.github.io/article/3739381465.html</id>
     <published>2017-12-27T13:07:00.000Z</published>
     <updated>2019-06-19T07:05:59.614Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>索引是一种特殊的文件(InnoDB数据表上的索引是表空间的一个组成部分)，它们包含着对数据表里所有记录的引用指针。更通俗的说，数据库索引好比是一本书前面的目录，能加快数据库的查询速度。</p><a id="more"></a><h1 id="索引类型"><a href="#索引类型" class="headerlink" title="索引类型"></a>索引类型</h1><p>索引分为聚簇索引和非聚簇索引两种，聚簇索引是按照数据存放的物理位置为顺序的，而非聚簇索引就不一样了；聚簇索引能提高多行检索的速度，而非聚簇索引对于单行的检索很快。</p><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="http://blog.codinglabs.org/articles/theory-of-mysql-index.html" target="_blank" rel="noopener">MySQL索引背后的数据结构及算法原理</a><br><a href="https://yq.aliyun.com/articles/50625" target="_blank" rel="noopener">MySQL · 引擎特性 · 初识 MySQL GIS 及 InnoDB R-TREE</a><br><a href="http://dev.mysql.com/doc/refman/5.7/en/fulltext-search.html" target="_blank" rel="noopener">Full-Text Search Functions</a><br><a href="http://dev.mysql.com/doc/refman/5.7/en/index-btree-hash.html" target="_blank" rel="noopener">Comparison of B-Tree and Hash Indexes</a><br><a href="http://www.ganktools.com/blog/post/backtrack843/Mysql%E6%9F%A5%E7%9C%8B%E7%B4%A2%E5%BC%95%E4%BD%BF%E7%94%A8%E7%8A%B6%E6%80%81">Mysql查看索引使用状态</a></p><h2 id="B-Tree"><a href="#B-Tree" class="headerlink" title="B-Tree"></a>B-Tree</h2><p>最常见的索引类型，基于B-Tree数据结构。B-Tree的基本思想是，所有值（被索引的列）都是排过序的，每个叶节点到跟节点距离相等。所以B-Tree适合用来查找某一范围内的数据，而且可以直接支持数据排序（ORDERBY）。但是当索引多列时，列的顺序特别重要，需要格外注意。InnoDB和MyISAM都支持B-Tree索引。InnoDB用的是一个变种B+Tree，而MyISAM为了节省空间对索引进行了压缩，从而牺牲了性能。</p><h2 id="Hash"><a href="#Hash" class="headerlink" title="Hash"></a>Hash</h2><p>基于hash表。所以这种索引只支持精确查找，不支持范围查找，不支持排序。这意味着范围查找或ORDER BY都要依赖server层的额外工作。目前只有Memory引擎支持显式的hash索引（但是它的hash是nonunique的，冲突太多时也会影响查找性能）。Memory引擎默认的索引类型即是Hash索引，虽然它也支持B-Tree索引。</p><h2 id="R-Tree"><a href="#R-Tree" class="headerlink" title="R-Tree"></a>R-Tree</h2><p>RTREE在mysql很少使用，仅支持geometry数据类型，支持该类型的存储引擎只有MyISAM、BDb、InnoDb、NDb、Archive几种。相对于BTREE，RTREE的优势在于范围查找。</p><h2 id="Full-text"><a href="#Full-text" class="headerlink" title="Full-text"></a>Full-text</h2><p><strong>MySQL从3.23.23版开始支持全文索引和全文检索</strong>,主要用来查找文本中的关键字，而不是直接与索引中的值相比较。Full-text索引跟其它索引大不相同，它更像是一个搜索引擎，而不是简单的WHERE语句的参数匹配。你可以对某列分别进行full-text索引和B-Tree索引，两者互不冲突。Full-text索引配合MATCH AGAINST操作使用，而不是一般的WHERE语句加LIKE。</p><h1 id="索引的使用"><a href="#索引的使用" class="headerlink" title="索引的使用"></a>索引的使用</h1><h2 id="普通索引"><a href="#普通索引" class="headerlink" title="普通索引"></a>普通索引</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">–直接创建索引</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">INDEX</span> index_name <span class="keyword">ON</span> <span class="keyword">table</span>(<span class="keyword">column</span>(<span class="keyword">length</span>))</span><br><span class="line">–修改表结构的方式添加索引</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name <span class="keyword">ADD</span> <span class="keyword">INDEX</span> index_name <span class="keyword">ON</span> (<span class="keyword">column</span>(<span class="keyword">length</span>))</span><br><span class="line">–创建表的时候同时创建索引</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`table`</span> (</span><br><span class="line"><span class="string">`id`</span> <span class="built_in">int</span>(<span class="number">11</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> AUTO_INCREMENT ,</span><br><span class="line"><span class="string">`title`</span> <span class="built_in">char</span>(<span class="number">255</span>) <span class="built_in">CHARACTER</span> <span class="keyword">SET</span> utf8 <span class="keyword">COLLATE</span> utf8_general_ci <span class="keyword">NOT</span> <span class="literal">NULL</span> ,</span><br><span class="line"><span class="string">`content`</span> <span class="built_in">text</span> <span class="built_in">CHARACTER</span> <span class="keyword">SET</span> utf8 <span class="keyword">COLLATE</span> utf8_general_ci <span class="literal">NULL</span> ,</span><br><span class="line"><span class="string">`time`</span> <span class="built_in">int</span>(<span class="number">10</span>) <span class="literal">NULL</span> <span class="keyword">DEFAULT</span> <span class="literal">NULL</span> ,</span><br><span class="line">PRIMARY <span class="keyword">KEY</span> (<span class="string">`id`</span>),</span><br><span class="line"><span class="keyword">INDEX</span> index_name (title(<span class="keyword">length</span>))</span><br><span class="line">)</span><br><span class="line">–删除索引</span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">INDEX</span> index_name <span class="keyword">ON</span> <span class="keyword">table</span></span><br></pre></td></tr></table></figure><h2 id="唯一索引"><a href="#唯一索引" class="headerlink" title="唯一索引"></a>唯一索引</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">–创建唯一索引</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">UNIQUE</span> <span class="keyword">INDEX</span> indexName <span class="keyword">ON</span> <span class="keyword">table</span>(<span class="keyword">column</span>(<span class="keyword">length</span>))</span><br><span class="line">–修改表结构</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name <span class="keyword">ADD</span> <span class="keyword">UNIQUE</span> indexName <span class="keyword">ON</span> (<span class="keyword">column</span>(<span class="keyword">length</span>))</span><br><span class="line">–创建表的时候直接指定</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`table`</span> (</span><br><span class="line"><span class="string">`id`</span> <span class="built_in">int</span>(<span class="number">11</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> AUTO_INCREMENT ,</span><br><span class="line"><span class="string">`title`</span> <span class="built_in">char</span>(<span class="number">255</span>) <span class="built_in">CHARACTER</span> <span class="keyword">SET</span> utf8 <span class="keyword">COLLATE</span> utf8_general_ci <span class="keyword">NOT</span> <span class="literal">NULL</span> ,</span><br><span class="line"><span class="string">`content`</span> <span class="built_in">text</span> <span class="built_in">CHARACTER</span> <span class="keyword">SET</span> utf8 <span class="keyword">COLLATE</span> utf8_general_ci <span class="literal">NULL</span> ,</span><br><span class="line"><span class="string">`time`</span> <span class="built_in">int</span>(<span class="number">10</span>) <span class="literal">NULL</span> <span class="keyword">DEFAULT</span> <span class="literal">NULL</span> ,</span><br><span class="line">PRIMARY <span class="keyword">KEY</span> (<span class="string">`id`</span>),</span><br><span class="line"><span class="keyword">UNIQUE</span> indexName (title(<span class="keyword">length</span>))</span><br><span class="line">);</span><br></pre></td></tr></table></figure><h2 id="全文索引"><a href="#全文索引" class="headerlink" title="全文索引"></a>全文索引</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">–创建表的时候添加全文索引</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`table`</span> (</span><br><span class="line"><span class="string">`id`</span> <span class="built_in">int</span>(<span class="number">11</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> AUTO_INCREMENT ,</span><br><span class="line"><span class="string">`title`</span> <span class="built_in">char</span>(<span class="number">255</span>) <span class="built_in">CHARACTER</span> <span class="keyword">SET</span> utf8 <span class="keyword">COLLATE</span> utf8_general_ci <span class="keyword">NOT</span> <span class="literal">NULL</span> ,</span><br><span class="line"><span class="string">`content`</span> <span class="built_in">text</span> <span class="built_in">CHARACTER</span> <span class="keyword">SET</span> utf8 <span class="keyword">COLLATE</span> utf8_general_ci <span class="literal">NULL</span> ,</span><br><span class="line"><span class="string">`time`</span> <span class="built_in">int</span>(<span class="number">10</span>) <span class="literal">NULL</span> <span class="keyword">DEFAULT</span> <span class="literal">NULL</span> ,</span><br><span class="line">PRIMARY <span class="keyword">KEY</span> (<span class="string">`id`</span>),</span><br><span class="line">FULLTEXT (<span class="keyword">content</span>)</span><br><span class="line">);</span><br><span class="line">–修改表结构添加全文索引</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> article <span class="keyword">ADD</span> FULLTEXT index_content(<span class="keyword">content</span>)</span><br><span class="line">–直接创建索引</span><br><span class="line"><span class="keyword">CREATE</span> FULLTEXT <span class="keyword">INDEX</span> index_content <span class="keyword">ON</span> article(<span class="keyword">content</span>)</span><br></pre></td></tr></table></figure><h2 id="组合索引"><a href="#组合索引" class="headerlink" title="组合索引"></a>组合索引</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">–创建表的时候添加组合索引</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`test`</span> (<span class="string">'aaa'</span> <span class="built_in">varchar</span>(<span class="number">16</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">default</span> <span class="string">''</span>, <span class="string">'bbb'</span> <span class="built_in">varchar</span>(<span class="number">16</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">default</span> <span class="string">''</span>,  <span class="string">'ccc'</span> <span class="built_in">int</span>(<span class="number">11</span>) <span class="keyword">UNSIGNED</span> <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">default</span> <span class="number">0</span>, <span class="keyword">KEY</span> <span class="string">`sindex`</span> (<span class="string">`aaa`</span>,<span class="string">`bbb`</span>,<span class="string">`ccc`</span>) )  <span class="keyword">ENGINE</span>=MyISAM <span class="keyword">COMMENT</span>=<span class="string">''</span>;</span><br><span class="line">–修改表结构添加组合索引</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> mytable <span class="keyword">ADD</span> <span class="keyword">INDEX</span> name_city_age (<span class="keyword">name</span>(<span class="number">10</span>),city,age);</span><br></pre></td></tr></table></figure><h2 id="主键索引"><a href="#主键索引" class="headerlink" title="主键索引"></a>主键索引</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">–创建表的时候添加主键索引</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> mytable( <span class="keyword">ID</span> <span class="built_in">INT</span> <span class="keyword">NOT</span> <span class="literal">NULL</span>, username <span class="built_in">VARCHAR</span>(<span class="number">16</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>, PRIMARY <span class="keyword">KEY</span>(<span class="keyword">ID</span>) );</span><br><span class="line">–修改表结构添加主键索引</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> mytable <span class="keyword">ADD</span> PRIMARY <span class="keyword">KEY</span> PK_testNoPK(<span class="keyword">id</span>);</span><br></pre></td></tr></table></figure><h1 id="查看索引信息"><a href="#查看索引信息" class="headerlink" title="查看索引信息"></a>查看索引信息</h1><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#方法1</span></span><br><span class="line"><span class="keyword">show</span> <span class="keyword">index</span> <span class="keyword">from</span> k8s_user \G;</span><br><span class="line"><span class="comment">#结果:</span></span><br><span class="line">*************************** 1. row ***************************</span><br><span class="line">        Table: k8s_user</span><br><span class="line">   Non_unique: 0</span><br><span class="line">     Key_name: PRIMARY</span><br><span class="line"> Seq_in_index: 1</span><br><span class="line">  Column_name: id</span><br><span class="line">    Collation: A</span><br><span class="line">  Cardinality: 1</span><br><span class="line">     Sub_part: NULL</span><br><span class="line">       Packed: NULL</span><br><span class="line">         Null: </span><br><span class="line">   Index_type: BTREE</span><br><span class="line">      <span class="keyword">Comment</span>: </span><br><span class="line">Index_comment: </span><br><span class="line">*************************** <span class="number">2.</span> <span class="keyword">row</span> ***************************</span><br><span class="line">        <span class="keyword">Table</span>: k8s_user</span><br><span class="line">   Non_unique: <span class="number">0</span></span><br><span class="line">     Key_name: UserName</span><br><span class="line"> Seq_in_index: <span class="number">1</span></span><br><span class="line">  Column_name: username</span><br><span class="line">    <span class="keyword">Collation</span>: A</span><br><span class="line">  Cardinality: <span class="number">1</span></span><br><span class="line">     Sub_part: <span class="literal">NULL</span></span><br><span class="line">       Packed: <span class="literal">NULL</span></span><br><span class="line">         <span class="literal">Null</span>: </span><br><span class="line">   Index_type: BTREE</span><br><span class="line">      <span class="keyword">Comment</span>: </span><br><span class="line">Index_comment: </span><br><span class="line"><span class="number">2</span> <span class="keyword">rows</span> <span class="keyword">in</span> <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br><span class="line"><span class="comment">#方法2</span></span><br><span class="line"><span class="keyword">select</span> INDEX_NAME,INDEX_TYPE <span class="keyword">from</span> INFORMATION_SCHEMA.STATISTICS <span class="keyword">where</span> TABLE_NAME=<span class="string">"k8s_user"</span>;</span><br><span class="line"><span class="comment">#结果:</span></span><br><span class="line">+<span class="comment">------------+------------+</span></span><br><span class="line">| INDEX_NAME | INDEX_TYPE |</span><br><span class="line">+<span class="comment">------------+------------+</span></span><br><span class="line">| PRIMARY    | BTREE      |</span><br><span class="line">| UserName   | BTREE      |</span><br><span class="line">+<span class="comment">------------+------------+</span></span><br><span class="line">2 rows in <span class="keyword">set</span> (<span class="number">0.01</span> sec)</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>索引是一种特殊的文件(InnoDB数据表上的索引是表空间的一个组成部分)，它们包含着对数据表里所有记录的引用指针。更通俗的说，数据库索引好比是一本书前面的目录，能加快数据库的查询速度。</p><a id="more"></a><h1 id="索引类型"><a href="#索引类型" class="headerlink" title="索引类型"></a>索引类型</h1><p>索引分为聚簇索引和非聚簇索引两种，聚簇索引是按照数据存放的物理位置为顺序的，而非聚簇索引就不一样了；聚簇索引能提高多行检索的速度，而非聚簇索引对于单行的检索很快。</p><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="http://blog.codinglabs.org/articles/theory-of-mysql-index.html" target="_blank" rel="noopener">MySQL索引背后的数据结构及算法原理</a><br><a href="https://yq.aliyun.com/articles/50625" target="_blank" rel="noopener">MySQL · 引擎特性 · 初识 MySQL GIS 及 InnoDB R-TREE</a><br><a href="http://dev.mysql.com/doc/refman/5.7/en/fulltext-search.html" target="_blank" rel="noopener">Full-Text Search Functions</a><br><a href="http://dev.mysql.com/doc/refman/5.7/en/index-btree-hash.html" target="_blank" rel="noopener">Comparison of B-Tree and Hash Indexes</a><br><a href="http://www.ganktools.com/blog/post/backtrack843/Mysql%E6%9F%A5%E7%9C%8B%E7%B4%A2%E5%BC%95%E4%BD%BF%E7%94%A8%E7%8A%B6%E6%80%81" target="_blank" rel="noopener">Mysql查看索引使用状态</a></p><h2 id="B-Tree"><a href="#B-Tree" class="headerlink" title="B-Tree"></a>B-Tree</h2><p>最常见的索引类型，基于B-Tree数据结构。B-Tree的基本思想是，所有值（被索引的列）都是排过序的，每个叶节点到跟节点距离相等。所以B-Tree适合用来查找某一范围内的数据，而且可以直接支持数据排序（ORDERBY）。但是当索引多列时，列的顺序特别重要，需要格外注意。InnoDB和MyISAM都支持B-Tree索引。InnoDB用的是一个变种B+Tree，而MyISAM为了节省空间对索引进行了压缩，从而牺牲了性能。</p><h2 id="Hash"><a href="#Hash" class="headerlink" title="Hash"></a>Hash</h2><p>基于hash表。所以这种索引只支持精确查找，不支持范围查找，不支持排序。这意味着范围查找或ORDER BY都要依赖server层的额外工作。目前只有Memory引擎支持显式的hash索引（但是它的hash是nonunique的，冲突太多时也会影响查找性能）。Memory引擎默认的索引类型即是Hash索引，虽然它也支持B-Tree索引。</p><h2 id="R-Tree"><a href="#R-Tree" class="headerlink" title="R-Tree"></a>R-Tree</h2><p>RTREE在mysql很少使用，仅支持geometry数据类型，支持该类型的存储引擎只有MyISAM、BDb、InnoDb、NDb、Archive几种。相对于BTREE，RTREE的优势在于范围查找。</p><h2 id="Full-text"><a href="#Full-text" class="headerlink" title="Full-text"></a>Full-text</h2><p><strong>MySQL从3.23.23版开始支持全文索引和全文检索</strong>,主要用来查找文本中的关键字，而不是直接与索引中的值相比较。Full-text索引跟其它索引大不相同，它更像是一个搜索引擎，而不是简单的WHERE语句的参数匹配。你可以对某列分别进行full-text索引和B-Tree索引，两者互不冲突。Full-text索引配合MATCH AGAINST操作使用，而不是一般的WHERE语句加LIKE。</p><h1 id="索引的使用"><a href="#索引的使用" class="headerlink" title="索引的使用"></a>索引的使用</h1><h2 id="普通索引"><a href="#普通索引" class="headerlink" title="普通索引"></a>普通索引</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">–直接创建索引</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">INDEX</span> index_name <span class="keyword">ON</span> <span class="keyword">table</span>(<span class="keyword">column</span>(<span class="keyword">length</span>))</span><br><span class="line">–修改表结构的方式添加索引</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name <span class="keyword">ADD</span> <span class="keyword">INDEX</span> index_name <span class="keyword">ON</span> (<span class="keyword">column</span>(<span class="keyword">length</span>))</span><br><span class="line">–创建表的时候同时创建索引</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`table`</span> (</span><br><span class="line"><span class="string">`id`</span> <span class="built_in">int</span>(<span class="number">11</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> AUTO_INCREMENT ,</span><br><span class="line"><span class="string">`title`</span> <span class="built_in">char</span>(<span class="number">255</span>) <span class="built_in">CHARACTER</span> <span class="keyword">SET</span> utf8 <span class="keyword">COLLATE</span> utf8_general_ci <span class="keyword">NOT</span> <span class="literal">NULL</span> ,</span><br><span class="line"><span class="string">`content`</span> <span class="built_in">text</span> <span class="built_in">CHARACTER</span> <span class="keyword">SET</span> utf8 <span class="keyword">COLLATE</span> utf8_general_ci <span class="literal">NULL</span> ,</span><br><span class="line"><span class="string">`time`</span> <span class="built_in">int</span>(<span class="number">10</span>) <span class="literal">NULL</span> <span class="keyword">DEFAULT</span> <span class="literal">NULL</span> ,</span><br><span class="line">PRIMARY <span class="keyword">KEY</span> (<span class="string">`id`</span>),</span><br><span class="line"><span class="keyword">INDEX</span> index_name (title(<span class="keyword">length</span>))</span><br><span class="line">)</span><br><span class="line">–删除索引</span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">INDEX</span> index_name <span class="keyword">ON</span> <span class="keyword">table</span></span><br></pre></td></tr></table></figure><h2 id="唯一索引"><a href="#唯一索引" class="headerlink" title="唯一索引"></a>唯一索引</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">–创建唯一索引</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">UNIQUE</span> <span class="keyword">INDEX</span> indexName <span class="keyword">ON</span> <span class="keyword">table</span>(<span class="keyword">column</span>(<span class="keyword">length</span>))</span><br><span class="line">–修改表结构</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name <span class="keyword">ADD</span> <span class="keyword">UNIQUE</span> indexName <span class="keyword">ON</span> (<span class="keyword">column</span>(<span class="keyword">length</span>))</span><br><span class="line">–创建表的时候直接指定</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`table`</span> (</span><br><span class="line"><span class="string">`id`</span> <span class="built_in">int</span>(<span class="number">11</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> AUTO_INCREMENT ,</span><br><span class="line"><span class="string">`title`</span> <span class="built_in">char</span>(<span class="number">255</span>) <span class="built_in">CHARACTER</span> <span class="keyword">SET</span> utf8 <span class="keyword">COLLATE</span> utf8_general_ci <span class="keyword">NOT</span> <span class="literal">NULL</span> ,</span><br><span class="line"><span class="string">`content`</span> <span class="built_in">text</span> <span class="built_in">CHARACTER</span> <span class="keyword">SET</span> utf8 <span class="keyword">COLLATE</span> utf8_general_ci <span class="literal">NULL</span> ,</span><br><span class="line"><span class="string">`time`</span> <span class="built_in">int</span>(<span class="number">10</span>) <span class="literal">NULL</span> <span class="keyword">DEFAULT</span> <span class="literal">NULL</span> ,</span><br><span class="line">PRIMARY <span class="keyword">KEY</span> (<span class="string">`id`</span>),</span><br><span class="line"><span class="keyword">UNIQUE</span> indexName (title(<span class="keyword">length</span>))</span><br><span class="line">);</span><br></pre></td></tr></table></figure><h2 id="全文索引"><a href="#全文索引" class="headerlink" title="全文索引"></a>全文索引</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">–创建表的时候添加全文索引</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`table`</span> (</span><br><span class="line"><span class="string">`id`</span> <span class="built_in">int</span>(<span class="number">11</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> AUTO_INCREMENT ,</span><br><span class="line"><span class="string">`title`</span> <span class="built_in">char</span>(<span class="number">255</span>) <span class="built_in">CHARACTER</span> <span class="keyword">SET</span> utf8 <span class="keyword">COLLATE</span> utf8_general_ci <span class="keyword">NOT</span> <span class="literal">NULL</span> ,</span><br><span class="line"><span class="string">`content`</span> <span class="built_in">text</span> <span class="built_in">CHARACTER</span> <span class="keyword">SET</span> utf8 <span class="keyword">COLLATE</span> utf8_general_ci <span class="literal">NULL</span> ,</span><br><span class="line"><span class="string">`time`</span> <span class="built_in">int</span>(<span class="number">10</span>) <span class="literal">NULL</span> <span class="keyword">DEFAULT</span> <span class="literal">NULL</span> ,</span><br><span class="line">PRIMARY <span class="keyword">KEY</span> (<span class="string">`id`</span>),</span><br><span class="line">FULLTEXT (<span class="keyword">content</span>)</span><br><span class="line">);</span><br><span class="line">–修改表结构添加全文索引</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> article <span class="keyword">ADD</span> FULLTEXT index_content(<span class="keyword">content</span>)</span><br><span class="line">–直接创建索引</span><br><span class="line"><span class="keyword">CREATE</span> FULLTEXT <span class="keyword">INDEX</span> index_content <span class="keyword">ON</span> article(<span class="keyword">content</span>)</span><br></pre></td></tr></table></figure><h2 id="组合索引"><a href="#组合索引" class="headerlink" title="组合索引"></a>组合索引</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">–创建表的时候添加组合索引</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`test`</span> (<span class="string">'aaa'</span> <span class="built_in">varchar</span>(<span class="number">16</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">default</span> <span class="string">''</span>, <span class="string">'bbb'</span> <span class="built_in">varchar</span>(<span class="number">16</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">default</span> <span class="string">''</span>,  <span class="string">'ccc'</span> <span class="built_in">int</span>(<span class="number">11</span>) <span class="keyword">UNSIGNED</span> <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">default</span> <span class="number">0</span>, <span class="keyword">KEY</span> <span class="string">`sindex`</span> (<span class="string">`aaa`</span>,<span class="string">`bbb`</span>,<span class="string">`ccc`</span>) )  <span class="keyword">ENGINE</span>=MyISAM <span class="keyword">COMMENT</span>=<span class="string">''</span>;</span><br><span class="line">–修改表结构添加组合索引</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> mytable <span class="keyword">ADD</span> <span class="keyword">INDEX</span> name_city_age (<span class="keyword">name</span>(<span class="number">10</span>),city,age);</span><br></pre></td></tr></table></figure><h2 id="主键索引"><a href="#主键索引" class="headerlink" title="主键索引"></a>主键索引</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">–创建表的时候添加主键索引</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> mytable( <span class="keyword">ID</span> <span class="built_in">INT</span> <span class="keyword">NOT</span> <span class="literal">NULL</span>, username <span class="built_in">VARCHAR</span>(<span class="number">16</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>, PRIMARY <span class="keyword">KEY</span>(<span class="keyword">ID</span>) );</span><br><span class="line">–修改表结构添加主键索引</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> mytable <span class="keyword">ADD</span> PRIMARY <span class="keyword">KEY</span> PK_testNoPK(<span class="keyword">id</span>);</span><br></pre></td></tr></table></figure><h1 id="查看索引信息"><a href="#查看索引信息" class="headerlink" title="查看索引信息"></a>查看索引信息</h1><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#方法1</span></span><br><span class="line"><span class="keyword">show</span> <span class="keyword">index</span> <span class="keyword">from</span> k8s_user \G;</span><br><span class="line"><span class="comment">#结果:</span></span><br><span class="line">*************************** 1. row ***************************</span><br><span class="line">        Table: k8s_user</span><br><span class="line">   Non_unique: 0</span><br><span class="line">     Key_name: PRIMARY</span><br><span class="line"> Seq_in_index: 1</span><br><span class="line">  Column_name: id</span><br><span class="line">    Collation: A</span><br><span class="line">  Cardinality: 1</span><br><span class="line">     Sub_part: NULL</span><br><span class="line">       Packed: NULL</span><br><span class="line">         Null: </span><br><span class="line">   Index_type: BTREE</span><br><span class="line">      <span class="keyword">Comment</span>: </span><br><span class="line">Index_comment: </span><br><span class="line">*************************** <span class="number">2.</span> <span class="keyword">row</span> ***************************</span><br><span class="line">        <span class="keyword">Table</span>: k8s_user</span><br><span class="line">   Non_unique: <span class="number">0</span></span><br><span class="line">     Key_name: UserName</span><br><span class="line"> Seq_in_index: <span class="number">1</span></span><br><span class="line">  Column_name: username</span><br><span class="line">    <span class="keyword">Collation</span>: A</span><br><span class="line">  Cardinality: <span class="number">1</span></span><br><span class="line">     Sub_part: <span class="literal">NULL</span></span><br><span class="line">       Packed: <span class="literal">NULL</span></span><br><span class="line">         <span class="literal">Null</span>: </span><br><span class="line">   Index_type: BTREE</span><br><span class="line">      <span class="keyword">Comment</span>: </span><br><span class="line">Index_comment: </span><br><span class="line"><span class="number">2</span> <span class="keyword">rows</span> <span class="keyword">in</span> <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br><span class="line"><span class="comment">#方法2</span></span><br><span class="line"><span class="keyword">select</span> INDEX_NAME,INDEX_TYPE <span class="keyword">from</span> INFORMATION_SCHEMA.STATISTICS <span class="keyword">where</span> TABLE_NAME=<span class="string">"k8s_user"</span>;</span><br><span class="line"><span class="comment">#结果:</span></span><br><span class="line">+<span class="comment">------------+------------+</span></span><br><span class="line">| INDEX_NAME | INDEX_TYPE |</span><br><span class="line">+<span class="comment">------------+------------+</span></span><br><span class="line">| PRIMARY    | BTREE      |</span><br><span class="line">| UserName   | BTREE      |</span><br><span class="line">+<span class="comment">------------+------------+</span></span><br><span class="line">2 rows in <span class="keyword">set</span> (<span class="number">0.01</span> sec)</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -1057,17 +1057,17 @@
     
     </summary>
     
-      <category term="数据库" scheme="https://www.ganktools.com/categories/sql/"/>
+      <category term="数据库" scheme="https://panda843.github.io/categories/sql/"/>
     
     
-      <category term="MySQL" scheme="https://www.ganktools.com/tags/MySQL/"/>
+      <category term="MySQL" scheme="https://panda843.github.io/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>Mysql查看索引使用状态</title>
-    <link href="https://www.ganktools.com/article/1119887905.html"/>
-    <id>https://www.ganktools.com/article/1119887905.html</id>
+    <link href="https://panda843.github.io/article/1119887905.html"/>
+    <id>https://panda843.github.io/article/1119887905.html</id>
     <published>2017-12-27T13:05:00.000Z</published>
     <updated>2019-06-19T07:05:59.613Z</updated>
     
@@ -1079,17 +1079,17 @@
     
     </summary>
     
-      <category term="数据库" scheme="https://www.ganktools.com/categories/sql/"/>
+      <category term="数据库" scheme="https://panda843.github.io/categories/sql/"/>
     
     
-      <category term="MySQL" scheme="https://www.ganktools.com/tags/MySQL/"/>
+      <category term="MySQL" scheme="https://panda843.github.io/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>my.ini常用配置说明</title>
-    <link href="https://www.ganktools.com/article/2980798673.html"/>
-    <id>https://www.ganktools.com/article/2980798673.html</id>
+    <link href="https://panda843.github.io/article/2980798673.html"/>
+    <id>https://panda843.github.io/article/2980798673.html</id>
     <published>2017-12-27T13:03:00.000Z</published>
     <updated>2019-06-19T07:05:59.640Z</updated>
     
@@ -1101,17 +1101,17 @@
     
     </summary>
     
-      <category term="数据库" scheme="https://www.ganktools.com/categories/sql/"/>
+      <category term="数据库" scheme="https://panda843.github.io/categories/sql/"/>
     
     
-      <category term="MySQL" scheme="https://www.ganktools.com/tags/MySQL/"/>
+      <category term="MySQL" scheme="https://panda843.github.io/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>PHP的装饰器模式实现</title>
-    <link href="https://www.ganktools.com/article/3095629145.html"/>
-    <id>https://www.ganktools.com/article/3095629145.html</id>
+    <link href="https://panda843.github.io/article/3095629145.html"/>
+    <id>https://panda843.github.io/article/3095629145.html</id>
     <published>2017-12-27T13:00:00.000Z</published>
     <updated>2019-06-19T07:05:59.636Z</updated>
     
@@ -1123,19 +1123,19 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
-      <category term="设计模式" scheme="https://www.ganktools.com/tags/design/"/>
+      <category term="设计模式" scheme="https://panda843.github.io/tags/design/"/>
     
   </entry>
   
   <entry>
     <title>PHP的适配器模式实现</title>
-    <link href="https://www.ganktools.com/article/247704845.html"/>
-    <id>https://www.ganktools.com/article/247704845.html</id>
+    <link href="https://panda843.github.io/article/247704845.html"/>
+    <id>https://panda843.github.io/article/247704845.html</id>
     <published>2017-12-27T12:57:00.000Z</published>
     <updated>2019-06-19T07:05:59.636Z</updated>
     
@@ -1147,19 +1147,19 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
-      <category term="设计模式" scheme="https://www.ganktools.com/tags/design/"/>
+      <category term="设计模式" scheme="https://panda843.github.io/tags/design/"/>
     
   </entry>
   
   <entry>
     <title>PHP的连贯操作实现</title>
-    <link href="https://www.ganktools.com/article/2897789060.html"/>
-    <id>https://www.ganktools.com/article/2897789060.html</id>
+    <link href="https://panda843.github.io/article/2897789060.html"/>
+    <id>https://panda843.github.io/article/2897789060.html</id>
     <published>2017-12-27T12:56:00.000Z</published>
     <updated>2019-06-19T07:05:59.636Z</updated>
     
@@ -1171,17 +1171,17 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
   </entry>
   
   <entry>
     <title>PHP把 session存到memcache中</title>
-    <link href="https://www.ganktools.com/article/3495718585.html"/>
-    <id>https://www.ganktools.com/article/3495718585.html</id>
+    <link href="https://panda843.github.io/article/3495718585.html"/>
+    <id>https://panda843.github.io/article/3495718585.html</id>
     <published>2017-12-27T12:53:00.000Z</published>
     <updated>2019-06-19T07:05:59.635Z</updated>
     
@@ -1193,17 +1193,17 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
   </entry>
   
   <entry>
     <title>PHP的类型约束</title>
-    <link href="https://www.ganktools.com/article/1678094766.html"/>
-    <id>https://www.ganktools.com/article/1678094766.html</id>
+    <link href="https://panda843.github.io/article/1678094766.html"/>
+    <id>https://panda843.github.io/article/1678094766.html</id>
     <published>2017-12-27T12:51:00.000Z</published>
     <updated>2019-06-19T07:05:59.636Z</updated>
     
@@ -1216,17 +1216,17 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
   </entry>
   
   <entry>
     <title>PHP的工厂模式实现</title>
-    <link href="https://www.ganktools.com/article/2964345999.html"/>
-    <id>https://www.ganktools.com/article/2964345999.html</id>
+    <link href="https://panda843.github.io/article/2964345999.html"/>
+    <id>https://panda843.github.io/article/2964345999.html</id>
     <published>2017-12-27T12:47:00.000Z</published>
     <updated>2019-06-19T07:05:59.636Z</updated>
     
@@ -1238,19 +1238,19 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
-      <category term="设计模式" scheme="https://www.ganktools.com/tags/design/"/>
+      <category term="设计模式" scheme="https://panda843.github.io/tags/design/"/>
     
   </entry>
   
   <entry>
     <title>PHP的单例模式实现</title>
-    <link href="https://www.ganktools.com/article/3754881030.html"/>
-    <id>https://www.ganktools.com/article/3754881030.html</id>
+    <link href="https://panda843.github.io/article/3754881030.html"/>
+    <id>https://panda843.github.io/article/3754881030.html</id>
     <published>2017-12-27T12:43:00.000Z</published>
     <updated>2019-06-19T07:05:59.635Z</updated>
     
@@ -1264,19 +1264,19 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
-      <category term="设计模式" scheme="https://www.ganktools.com/tags/design/"/>
+      <category term="设计模式" scheme="https://panda843.github.io/tags/design/"/>
     
   </entry>
   
   <entry>
     <title>PHP对Memcache的使用</title>
-    <link href="https://www.ganktools.com/article/3248770788.html"/>
-    <id>https://www.ganktools.com/article/3248770788.html</id>
+    <link href="https://panda843.github.io/article/3248770788.html"/>
+    <id>https://panda843.github.io/article/3248770788.html</id>
     <published>2017-12-27T12:40:00.000Z</published>
     <updated>2019-06-19T07:05:59.635Z</updated>
     
@@ -1288,17 +1288,17 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
   </entry>
   
   <entry>
     <title>Composer常用命令</title>
-    <link href="https://www.ganktools.com/article/2869907571.html"/>
-    <id>https://www.ganktools.com/article/2869907571.html</id>
+    <link href="https://panda843.github.io/article/2869907571.html"/>
+    <id>https://panda843.github.io/article/2869907571.html</id>
     <published>2017-12-27T12:35:00.000Z</published>
     <updated>2019-06-19T07:05:59.559Z</updated>
     
@@ -1310,17 +1310,17 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
   </entry>
   
   <entry>
     <title>Linux下静态库和动态库编译过程</title>
-    <link href="https://www.ganktools.com/article/3393728657.html"/>
-    <id>https://www.ganktools.com/article/3393728657.html</id>
+    <link href="https://panda843.github.io/article/3393728657.html"/>
+    <id>https://panda843.github.io/article/3393728657.html</id>
     <published>2017-12-27T12:31:00.000Z</published>
     <updated>2019-06-19T07:05:59.607Z</updated>
     
@@ -1333,19 +1333,19 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="Linux" scheme="https://www.ganktools.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://panda843.github.io/tags/Linux/"/>
     
-      <category term="C/C++" scheme="https://www.ganktools.com/tags/C-C/"/>
+      <category term="C/C++" scheme="https://panda843.github.io/tags/C-C/"/>
     
   </entry>
   
   <entry>
     <title>PHP的ArrayAccess接口使用</title>
-    <link href="https://www.ganktools.com/article/904739967.html"/>
-    <id>https://www.ganktools.com/article/904739967.html</id>
+    <link href="https://panda843.github.io/article/904739967.html"/>
+    <id>https://panda843.github.io/article/904739967.html</id>
     <published>2017-12-27T12:29:00.000Z</published>
     <updated>2019-06-19T07:05:59.635Z</updated>
     
@@ -1359,17 +1359,17 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
   </entry>
   
   <entry>
     <title>PHP的Hook钩子实现</title>
-    <link href="https://www.ganktools.com/article/4003041570.html"/>
-    <id>https://www.ganktools.com/article/4003041570.html</id>
+    <link href="https://panda843.github.io/article/4003041570.html"/>
+    <id>https://panda843.github.io/article/4003041570.html</id>
     <published>2017-12-27T12:27:00.000Z</published>
     <updated>2019-06-19T07:05:59.635Z</updated>
     
@@ -1381,17 +1381,17 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
   </entry>
   
   <entry>
     <title>PHP进程管理类</title>
-    <link href="https://www.ganktools.com/article/3090157541.html"/>
-    <id>https://www.ganktools.com/article/3090157541.html</id>
+    <link href="https://panda843.github.io/article/3090157541.html"/>
+    <id>https://panda843.github.io/article/3090157541.html</id>
     <published>2017-12-27T12:24:00.000Z</published>
     <updated>2019-06-19T07:05:59.636Z</updated>
     
@@ -1403,17 +1403,17 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
   </entry>
   
   <entry>
     <title>PHP实现ACL权限控制</title>
-    <link href="https://www.ganktools.com/article/864010822.html"/>
-    <id>https://www.ganktools.com/article/864010822.html</id>
+    <link href="https://panda843.github.io/article/864010822.html"/>
+    <id>https://panda843.github.io/article/864010822.html</id>
     <published>2017-12-27T12:18:00.000Z</published>
     <updated>2019-06-19T07:05:59.634Z</updated>
     
@@ -1426,17 +1426,17 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
   </entry>
   
   <entry>
     <title>PHP的ORM实现</title>
-    <link href="https://www.ganktools.com/article/4014080582.html"/>
-    <id>https://www.ganktools.com/article/4014080582.html</id>
+    <link href="https://panda843.github.io/article/4014080582.html"/>
+    <id>https://panda843.github.io/article/4014080582.html</id>
     <published>2017-12-27T12:15:00.000Z</published>
     <updated>2019-06-19T07:05:59.635Z</updated>
     
@@ -1448,17 +1448,17 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
   </entry>
   
   <entry>
     <title>PHP使用Spl接口实现观察者模式</title>
-    <link href="https://www.ganktools.com/article/2990256094.html"/>
-    <id>https://www.ganktools.com/article/2990256094.html</id>
+    <link href="https://panda843.github.io/article/2990256094.html"/>
+    <id>https://panda843.github.io/article/2990256094.html</id>
     <published>2017-12-27T12:04:00.000Z</published>
     <updated>2019-06-19T07:05:59.634Z</updated>
     
@@ -1471,21 +1471,21 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
-      <category term="SPL标准库" scheme="https://www.ganktools.com/tags/spl/"/>
+      <category term="SPL标准库" scheme="https://panda843.github.io/tags/spl/"/>
     
-      <category term="设计模式" scheme="https://www.ganktools.com/tags/design/"/>
+      <category term="设计模式" scheme="https://panda843.github.io/tags/design/"/>
     
   </entry>
   
   <entry>
     <title>PHP的二进制封包(pack/unpack)</title>
-    <link href="https://www.ganktools.com/article/706730064.html"/>
-    <id>https://www.ganktools.com/article/706730064.html</id>
+    <link href="https://panda843.github.io/article/706730064.html"/>
+    <id>https://panda843.github.io/article/706730064.html</id>
     <published>2017-12-27T11:57:00.000Z</published>
     <updated>2019-06-19T07:05:59.635Z</updated>
     
@@ -1497,17 +1497,17 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
   </entry>
   
   <entry>
     <title>PHP依赖注入实现和应用场景</title>
-    <link href="https://www.ganktools.com/article/2814158988.html"/>
-    <id>https://www.ganktools.com/article/2814158988.html</id>
+    <link href="https://panda843.github.io/article/2814158988.html"/>
+    <id>https://panda843.github.io/article/2814158988.html</id>
     <published>2017-12-27T11:48:00.000Z</published>
     <updated>2019-06-19T07:05:59.634Z</updated>
     
@@ -1519,19 +1519,19 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
-      <category term="设计模式" scheme="https://www.ganktools.com/tags/design/"/>
+      <category term="设计模式" scheme="https://panda843.github.io/tags/design/"/>
     
   </entry>
   
   <entry>
     <title>PHP之spl_autoload_register使用说明</title>
-    <link href="https://www.ganktools.com/article/3799683601.html"/>
-    <id>https://www.ganktools.com/article/3799683601.html</id>
+    <link href="https://panda843.github.io/article/3799683601.html"/>
+    <id>https://panda843.github.io/article/3799683601.html</id>
     <published>2017-12-27T11:41:00.000Z</published>
     <updated>2019-06-19T07:05:59.616Z</updated>
     
@@ -1544,17 +1544,17 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
   </entry>
   
   <entry>
     <title>PHP的RSA加密解密</title>
-    <link href="https://www.ganktools.com/article/1262273877.html"/>
-    <id>https://www.ganktools.com/article/1262273877.html</id>
+    <link href="https://panda843.github.io/article/1262273877.html"/>
+    <id>https://panda843.github.io/article/1262273877.html</id>
     <published>2017-12-27T09:45:00.000Z</published>
     <updated>2019-06-19T07:05:59.635Z</updated>
     
@@ -1566,17 +1566,17 @@
     
     </summary>
     
-      <category term="开发" scheme="https://www.ganktools.com/categories/develop/"/>
+      <category term="开发" scheme="https://panda843.github.io/categories/develop/"/>
     
     
-      <category term="PHP" scheme="https://www.ganktools.com/tags/PHP/"/>
+      <category term="PHP" scheme="https://panda843.github.io/tags/PHP/"/>
     
   </entry>
   
   <entry>
     <title>Crontab定时任务设置</title>
-    <link href="https://www.ganktools.com/article/123452189.html"/>
-    <id>https://www.ganktools.com/article/123452189.html</id>
+    <link href="https://panda843.github.io/article/123452189.html"/>
+    <id>https://panda843.github.io/article/123452189.html</id>
     <published>2017-12-27T08:49:00.000Z</published>
     <updated>2019-06-19T07:05:59.559Z</updated>
     
@@ -1588,10 +1588,10 @@
     
     </summary>
     
-      <category term="运维" scheme="https://www.ganktools.com/categories/operation/"/>
+      <category term="运维" scheme="https://panda843.github.io/categories/operation/"/>
     
     
-      <category term="Linux" scheme="https://www.ganktools.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://panda843.github.io/tags/Linux/"/>
     
   </entry>
   
