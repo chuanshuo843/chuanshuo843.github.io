@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: o时过境迁心难沉
+title: 是潘达呀
 subtitle: 记录看到和遇到的问题和解决方式
 description: 苏老堤边玉一林，六桥风月是知音。任他桃李争欢赏，不为繁华易素心。
-author: o时过境迁心难沉
+author: 是潘达呀
 language: zh-Hans
 timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://www.ganktools.com
+url: https://panda843.github.io
 root: /
 #permalink: :year/:month/:day/:title.html
 permalink: article/:abbrlink.html
@@ -87,7 +87,7 @@ theme: hexo-theme-next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
     type: git 
-    repository: git@github.com:chuanshuo843/chuanshuo843.github.io.git
+    repository: git@github.com:panda843/panda843.github.io.git
     branch: master
 # 生成文章特定链接    
 # npm install hexo-abbrlink --save
